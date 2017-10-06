@@ -1,0 +1,16 @@
+{
+  "name": "fe-common-libary",
+  "version": "0.0.1",
+  "description": "fe-common-libary",
+  "main": "lib/lib.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/cnyesrd/fe-common-libary.git"
+  },
+  "author": "Ichi Dong",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cnyesrd/fe-common-libary/overview"
+}
