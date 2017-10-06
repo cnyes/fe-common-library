@@ -1,0 +1,10 @@
+options:
+  merge-default-rules: false
+  formatter: stylish
+files:
+  include: '**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*.*'
+    - 'src/styles/vendor/**/*.*'
+    - 'src/components/CustomDatePicker/styles.scss'
+    - 'src/components/NewsByColumnists/react-virtualized.scss'

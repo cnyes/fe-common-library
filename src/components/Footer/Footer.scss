@@ -1,0 +1,141 @@
+@import '../../styles/base';
+
+$footer-height: 140px;
+$footer-bg-color: #514848;
+
+#wrapper { // sass-lint:disable-line no-ids
+  background-color: $footer-bg-color;
+  height: $footer-height;
+
+  /* NOTE: reset for export to common component start */
+  font-smooth: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 17px/23px $font-family;
+
+  * {
+    box-sizing: border-box;
+  }
+  /* NOTE: reset for export to common component start end */
+
+  .main-footer {
+    background-color: $footer-bg-color;
+    color: $white;
+    display: table;
+    margin: 0 auto;
+    padding: 53px 0 40px;
+    width: 890px;
+  }
+
+  .logo {
+    display: table-cell;
+    width: 168px;
+    position: relative;
+
+    a {
+      font: inherit;
+      background-size: cover;
+      background: url('../../assets/icon-new-logo.svg') center no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: inline-block;
+      height: 56px;
+      width: 128px;
+    }
+  }
+
+  .nav {
+    display: table-cell;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 40px;
+    position: relative;
+    width: 530px;
+
+    &::before {
+      border-left: 1px solid $white;
+      content: '';
+      height: 40px;
+      left: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    a {
+      color: $white;
+      text-align: left;
+      font: inherit;
+
+      &:not(:first-child) {
+        border-left: 1px solid $white;
+        padding: 0 9px;
+      }
+
+      &:first-child {
+        padding-right: 9px;
+      }
+    }
+  }
+
+  .socials {
+    display: table-cell;
+    white-space: nowrap;
+
+    .social-item {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    .title {
+      font-size: 12px;
+      position: absolute;
+      top: -13px;
+      width: 61px;
+      left: -7px;
+      height: 13px;
+      line-height: 13px;
+      text-align: justify;
+      transform: scale(0.75);
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+    }
+
+    .social-icon {
+      background-size: 44px 44px;
+      display: inline-block;
+      height: 44px;
+      margin-top: 3px;
+      width: 44px;
+      text-indent: -5000px; /* hide inner text */
+    }
+
+    .facebook {
+      background: url('../../assets/icon-white-bg-fb.svg') center no-repeat;
+    }
+
+    .line {
+      background: url('../../assets/icon-white-line.svg') center no-repeat;
+    }
+
+    .app {
+      background: url('../../assets/icon-download-app-qrcode.svg') center no-repeat;
+    }
+  }
+
+  .copyright {
+    font: inherit;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .statement {
+    bottom: -20px;
+    position: absolute;
+  }
+}
