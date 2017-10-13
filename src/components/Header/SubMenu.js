@@ -108,9 +108,9 @@ export default class SubMenu extends Component {
   static defaultProps = {
     className: '',
     catSlug: '',
-    leftList: [],
+    leftList: undefined,
     leftListTitle: undefined,
-    rightList: [],
+    rightList: undefined,
     rightListTitle: undefined,
     newsBaseUrl: '',
     request: undefined,
@@ -147,9 +147,9 @@ export default class SubMenu extends Component {
   };
 
   renderPopupMenu() {
-    const { leftList, leftListTitle, catSlug, rightList, rightListTitle, newsBaseUrl } = this.props;
+    const { leftList, leftListTitle, catSlug, rightList, rightListTitle, newsBaseUrl, request } = this.props;
     const { list } = this.state;
-    const isOnlyLeft = !catSlug && !rightList;
+    const isOnlyLeft = (!catSlug && !rightList) || (catSlug && !request);
 
     if (!leftList && isOnlyLeft) {
       // no left and no right, => no popup menu
@@ -165,7 +165,7 @@ export default class SubMenu extends Component {
             isOnlyLeft && style.narrowedList,
             leftListTitle
           )}
-        {catSlug && renderList(list, newsBaseUrl)}
+        {catSlug && request && renderList(list, newsBaseUrl)}
         {!catSlug &&
           rightList &&
           renderStaticList(rightList, classNames(styles['news-list'], 'theme-news-list'), undefined, rightListTitle)}

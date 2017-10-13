@@ -24,7 +24,7 @@ $_cat-nav-sub-item-hover-bgcolor: #dedede;
 #wrapper { // sass-lint:disable-line no-ids
   background-color: $red;
   display: block;
-  height: 116px;
+  height: 110px;
   position: relative;
   width: 100%;
   z-index: 100;
@@ -43,7 +43,7 @@ $_cat-nav-sub-item-hover-bgcolor: #dedede;
   .wrapper-fixed {
     background-color: $red;
     display: block;
-    height: 116px;
+    height: 110px;
     position: fixed;
     top: 0;
     width: 100%;

@@ -4,16 +4,16 @@ import { Link } from 'react-router';
 import { locationShape } from 'react-router/lib/PropTypes';
 import raf from 'raf';
 import classNames from 'classnames';
-import { requestType } from './propTypes';
+import { requestType, navsType, catNavsType } from './propTypes';
 import SubMenu from './SubMenu';
 import SubNavItem from './SubNavItem';
 import styles from './Header.scss';
-import navs from './config/navs';
-import catNavs from './config/catNavs';
+// import navs from './config/navs';
 import { CategoryMappingWithSubs } from './ConstantCats';
 import { FIXED_HEADER_NONE, FIXED_HEADER_FULL, FIXED_HEADER_SUB, FIXED_HEADER_SEARCH } from './ConstantUI';
 
 const DISTANCE_OVER_SUBHEADER = 80;
+const EMPTY_FUNCTION = () => {};
 
 function findCatSlugFromUrl(pathname = '') {
   const regex = /^\/(news|columnists|projects|trending|search)?\/?(\w+)?\/?(\w+)?/;
@@ -35,7 +35,7 @@ function findCatSlugFromUrl(pathname = '') {
     : target;
 }
 
-function renderNavs(channel, newsBaseUrl, request) {
+function renderNavs(channel, navs, newsBaseUrl, request) {
   return navs.map((nav, idx) => {
     const className = nav.title === channel ? classNames(styles.active, 'theme-active') : '';
 
@@ -56,6 +56,8 @@ class Header extends PureComponent {
     toggleFixedHeader: PropTypes.func.isRequired,
     newsBaseUrl: PropTypes.string.isRequired,
     request: requestType,
+    navs: navsType.isRequired,
+    catNavs: catNavsType,
   };
 
   static defaultProps = {
@@ -64,6 +66,8 @@ class Header extends PureComponent {
     fixedHeaderType: FIXED_HEADER_NONE,
     newsBaseUrl: '',
     request: undefined,
+    catNavs: undefined,
+    toggleFixedHeader: EMPTY_FUNCTION,
   };
 
   componentDidMount() {
@@ -108,18 +112,20 @@ class Header extends PureComponent {
   };
 
   renderSubHeader(isFixed = false) {
+    const { fixedHeaderType } = this.props;
+
     // .js-* className is for e2e test
     let subHeaderClass = isFixed
       ? classNames(styles['sub-header'], styles.fixed, 'theme-sub-header', 'theme-fixed')
       : classNames(styles['sub-header'], 'theme-sub-header');
 
-    if (this.props.fixedHeaderType === FIXED_HEADER_SEARCH) {
+    if (fixedHeaderType === FIXED_HEADER_SEARCH) {
       if (isFixed) {
         subHeaderClass = classNames(subHeaderClass, styles.hide, 'theme-hide', 'js-hide');
       }
     } else {
       subHeaderClass =
-        this.props.fixedHeaderType === (isFixed ? FIXED_HEADER_SUB : FIXED_HEADER_FULL)
+        fixedHeaderType === (isFixed ? FIXED_HEADER_SUB : FIXED_HEADER_FULL)
           ? subHeaderClass
           : classNames(subHeaderClass, styles.hide, 'theme-hide', 'js-hide');
     }
@@ -134,7 +140,8 @@ class Header extends PureComponent {
   }
 
   renderCatMenu() {
-    const activeCatSlug = findCatSlugFromUrl(this.props.location.pathname);
+    const { catNavs, location } = this.props;
+    const activeCatSlug = findCatSlugFromUrl(location.pathname);
 
     return catNavs.map((nav, idx) => {
       return (
@@ -183,7 +190,7 @@ class Header extends PureComponent {
   }
 
   render() {
-    const { channel, newsBaseUrl, request } = this.props;
+    const { catNavs, channel, navs, newsBaseUrl, request } = this.props;
 
     return (
       <div id={styles.wrapper} className={classNames('theme-wrapper', 'theme-header')}>
@@ -206,17 +213,20 @@ class Header extends PureComponent {
               {this.renderSearch()}
             </span>
           </div>
-          <nav>{renderNavs(channel, newsBaseUrl, request)}</nav>
+          <nav>{renderNavs(channel, navs, newsBaseUrl, request)}</nav>
         </header>
-        <div
-          className={classNames(
-            styles['subheader-wrapper'],
-            this.props.fixedHeaderType === FIXED_HEADER_SUB && styles.fixed
+        {catNavs &&
+          catNavs.length && (
+            <div
+              className={classNames(
+                styles['subheader-wrapper'],
+                this.props.fixedHeaderType === FIXED_HEADER_SUB && styles.fixed
+              )}
+            >
+              {this.renderSubHeader(true)}
+              {this.renderSubHeader(false)}
+            </div>
           )}
-        >
-          {this.renderSubHeader(true)}
-          {this.renderSubHeader(false)}
-        </div>
       </div>
     );
   }
