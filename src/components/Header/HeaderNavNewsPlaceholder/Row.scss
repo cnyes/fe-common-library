@@ -1,0 +1,37 @@
+@import '../../../styles/base';
+
+@keyframes float_bg {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+
+.multi-row {
+  width: 100%;
+}
+
+.news-row-placeholder {
+  display: block;
+  position: relative;
+  background: $white;
+  height: 36px;
+  border-bottom: 1px solid $border-light-gray;
+  width: 100%;
+  padding: 0 20px;
+  padding-left: 98px;
+
+  .wrapper {
+    display: block;
+    position: absolute;
+    left: 0;
+    // animation: float_bg 1s infinite linear forwards;
+    background: $gray-f6f7f8;
+    background-image: -webkit-linear-gradient(left, $gray-f6f6f6 0%, $gray-edeef1 20%, $gray-f6f6f6 40%, $gray-f6f6f6 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 100%;
+    /* padding: 98px, cover width: 106px, margin to cover: 15px + 40px; */
+    width: 100%;
+    height: 15px;
+    z-index: 2;
+    @extend %vertical-center;
+  }
+}

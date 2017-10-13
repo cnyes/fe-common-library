@@ -1,0 +1,544 @@
+@import '../../styles/base';
+
+$header-width: $wrapper-width;
+$header-shorter-width: 1000px;
+$gray-dfdfdf: #dfdfdf;
+$gray-d9d9d9: #d9d9d9;
+$black-a02: rgba(0, 0, 0, 0.2);
+$news-list-bg-color: #f7f5f5;
+$news-list-link-color: #a61a17;
+$_news-list-opacity: 0.96;
+$_news-list-width: 310px;
+$_news-list-padding-vertical: 5px;
+$_news-list-padding-horizontal: 0;
+$_news-list-title-height: 45px;
+$_news-list-link-height: 35px;
+$_popup-nav-width: 120px;
+$_1280-popup-nav-width: $_popup-nav-width - 8px;
+
+$_cat-nav-item-hover-bgcolor: $news-list-bg-color;
+$_cat-nav-sub-item-color: $black;
+$_cat-nav-sub-item-hover-color: #a61a17;
+$_cat-nav-sub-item-hover-bgcolor: #dedede;
+
+#wrapper { // sass-lint:disable-line no-ids
+  background-color: $red;
+  display: block;
+  height: 116px;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+
+  /* NOTE: reset for export to common component start */
+  font-smooth: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 17px/23px $font-family;
+
+  * {
+    box-sizing: border-box;
+  }
+  /* NOTE: reset for export to common component end */
+
+  .wrapper-fixed {
+    background-color: $red;
+    display: block;
+    height: 116px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+  }
+
+  .main-header {
+    height: 110px;
+    margin: 0 auto;
+    width: $header-width;
+
+    nav {
+      font: inherit;
+      text-align: left;
+
+      &:not(.cat-menu) {
+        display: block;
+
+        > div {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          vertical-align: bottom;
+          z-index: 1;
+
+          .with-arrow {
+            background-size: cover;
+            background: url('../../assets/icon-white-arrow-down.svg') center no-repeat;
+            height: 3px;
+            opacity: 0.6;
+            position: absolute;
+            right: 5px;
+            top: 16px;
+            width: 5px;
+          }
+
+          &:hover {
+            /* popup menu mouse movement hover UX enhancement */
+            &::before {
+              border-left: 25px solid transparent;
+              border-right: 25px solid transparent;
+              border-top: 25px solid transparent;
+              content: '';
+              display: block;
+              height: 0;
+              position: absolute;
+              right: -34px;
+              top: 14px;
+              transform: rotate(45deg);
+              width: 0;
+            }
+
+            + div {
+              z-index: 0;
+            }
+            /* end of enhancement */
+
+            &.active > .submenu-title,
+            > .submenu-title {
+              background-color: $gray-666;
+              color: $white;
+              opacity: $_news-list-opacity;
+            }
+
+            .with-arrow {
+              opacity: 0;
+            }
+
+            .popup {
+              display: block;
+            }
+          }
+
+          > a,
+          > span {
+            // font-weight: 400;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            color: $white;
+            display: block;
+            font-size: 15px;
+            line-height: 36px;
+            padding: 0 17px;
+            position: relative;
+            will-change: background-color;
+          }
+
+          &.active > .submenu-title {
+            background-color: $white;
+            color: $red;
+            font-weight: bold;
+          }
+
+          .popup {
+            background: $gray-333;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+            box-shadow: 0 3px 6px 0 rgba($black, 0.3);
+            display: none;
+            height: $_news-list-link-height * 10 + $_news-list-title-height + $_news-list-padding-vertical * 2;
+            left: 0;
+            opacity: $_news-list-opacity;
+            overflow: hidden;
+            position: absolute;
+            top: $_news-list-link-height + 1;
+            width: $_news-list-width + $_popup-nav-width;
+            z-index: 100;
+
+            .link-wrapper {
+              background-color: $gray-666;
+              display: block;
+              height: 100%;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: $_popup-nav-width;
+
+              > a {
+                color: $white;
+                display: block;
+                font-size: 15px;
+                height: $_news-list-link-height;
+                padding: 7px 15px;
+                position: relative;
+                text-align: left;
+                white-space: nowrap;
+                will-change: background-color;
+
+                &:not(:last-child) {
+                  &::after {
+                    border-bottom: 1px solid $white;
+                    bottom: -2px;
+                    content: '';
+                    height: 1px;
+                    left: 15px;
+                    opacity: 0.3;
+                    position: absolute;
+                    width: 94px;
+                  }
+                }
+
+                &:hover {
+                  background-color: $gray-969696;
+                  transition: background-color 0.2s ease;
+
+                  &::after {
+                    opacity: 0;
+                  }
+                }
+
+                &.icon-new {
+                  position: relative;
+
+                  &::after {
+                    background-size: 36px 17px;
+                    background: url('../../assets/icon-new.png') center no-repeat;
+                    content: '';
+                    display: block;
+                    height: 17px;
+                    position: absolute;
+                    right: 0;
+                    top: 12px;
+                    width: 36px;
+                  }
+                }
+              }
+            }
+
+            .news-list {
+              background: $news-list-bg-color;
+              display: block;
+              height: 100%;
+              margin-left: $_popup-nav-width;
+              padding: $_news-list-padding-vertical $_news-list-padding-horizontal;
+              position: relative;
+              text-align: left;
+              width: $_news-list-width;
+
+              h5 {
+                // font-weight: 400;
+                border-bottom: 1px solid $gray-d9d9d9;
+                color: $black;
+                display: inline-block;
+                font-size: 17px;
+                line-height: 2;
+                margin: 0 20px 10px;
+                padding-bottom: 2px;
+                width: $_news-list-width - 40px;
+              }
+
+              a {
+                color: $news-list-link-color;
+                display: block;
+                font-size: 15px;
+                line-height: 35px;
+                padding: 0 20px;
+                text-align: left;
+                @extend %text-ellipsis;
+
+                &:hover {
+                  background: $gray-dfdfdf;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header-menu {
+    align-items: center;
+    display: flex;
+    height: 74px;
+    justify-content: space-between;
+    padding: 15px 0 21px;
+
+    .logo-wrapper {
+      align-items: flex-end;
+      display: flex;
+      text-align: center;
+    }
+
+    .logo {
+      background-size: cover;
+      background: url('../../assets/icon-new-logo.svg') center no-repeat;
+      display: inline-block;
+      height: 38px;
+      margin-right: 6px;
+      width: 87px;
+    }
+
+    .channel-label {
+      background-color: $white;
+      border-radius: 2px;
+      color: $red;
+      display: inline-block;
+      font-size: 16px;
+      height: 24px;
+      line-height: 25px;
+      width: 47px;
+    }
+
+    .actions {
+      color: $white;
+      display: flex;
+      padding-top: 12px;
+    }
+
+    .user-nav {
+      font: inherit;
+
+      li {
+        font: inherit;
+      }
+
+      a {
+        color: $white;
+        font-size: 12px;
+        padding-top: 14px;
+
+        &:hover {
+          color: $gray-ccc;
+        }
+      }
+    }
+  }
+
+  .header-search {
+    margin-left: 19px;
+    position: relative;
+
+    input {
+      background-color: transparent;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border: 1px solid $white;
+      color: $white;
+      display: inline-block;
+      font-size: 13px;
+      height: 26px;
+      line-height: 2;
+      padding: 0 12px;
+      width: 220px;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    button {
+      background-size: cover;
+      background: url('../../assets/icon-white-search.svg') center no-repeat;
+      border: 0;
+      cursor: pointer;
+      height: 12px;
+      position: absolute;
+      right: 9px;
+      top: 8px;
+      width: 12px;
+    }
+  }
+
+  .subheader-wrapper {
+    background-color: $white;
+    border-bottom: 1px solid $gray-d8d8d8;
+    height: 38px;
+    min-width: 100%;
+
+    &.fixed {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .sub-header {
+    margin: 0 auto;
+    // workaround, 裡面元件的總寬度符合設計的規格但比預計的超過一些, 使用 nowrap 不換行
+    white-space: nowrap;
+    width: $header-width;
+
+    &.fixed {
+      background-color: $red;
+      display: block;
+      opacity: 1;
+      position: fixed;
+      top: 0;
+      transform: translateY(0);
+      transition: transform 0.15s ease-in-out;
+      width: 100%;
+      will-change: opacity;
+      z-index: 100;
+
+      .cat-menu {
+        background-color: $red;
+        border-bottom-color: transparent;
+        margin: 0 auto;
+        width: $header-width;
+
+        .cat-nav-item {
+          > a {
+            color: $white;
+            will-change: background;
+
+            &.active,
+            &:hover {
+              background-color: $gray-666;
+              color: $white;
+            }
+
+            &.active {
+              background-color: $white;
+              border-color: transparent;
+              color: $red;
+              font-weight: bold;
+
+              &:hover {
+                background-color: $gray-666;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.hide {
+      opacity: 0;
+      transform: translateY(-100%);
+      z-index: -1;
+    }
+
+    .cat-menu {
+      > .cat-nav-item {
+        color: $gray-686868;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 36px;
+        position: relative;
+        vertical-align: top;
+        will-change: backgroud-color;
+
+        &:hover {
+          > a {
+            color: $red;
+
+            &.with-arrow {
+              background-color: $_cat-nav-item-hover-bgcolor;
+              box-shadow: 0 3px 4px 0 $black-a04;
+              transition: background-color 0.15s ease-in-out;
+
+              &::after {
+                opacity: 0;
+              }
+            }
+          }
+
+          > .cat-nav-sub-item {
+            display: block;
+          }
+        }
+
+        > a {
+          border-bottom: 2px solid transparent;
+          color: $gray-686868;
+          display: inline-block;
+          font-size: 14px;
+          line-height: 36px;
+          padding: 0 15px;
+          position: relative;
+          vertical-align: top;
+          will-change: border-color;
+
+          &.active {
+            border-color: $red;
+          }
+
+          &.with-arrow {
+            &::after {
+              background-size: cover;
+              background: url('../../assets/icon-black-arrow-down.svg') center no-repeat;
+              content: '';
+              height: 3px;
+              opacity: 0.6;
+              position: absolute;
+              right: 5px;
+              top: 16px;
+              width: 5px;
+            }
+          }
+
+          &.is-new {
+            padding-right: 45px;
+
+            &::after {
+              background-size: cover;
+              background: url('../../assets/icon-new.svg') center no-repeat;
+              content: '';
+              display: block;
+              height: 16px;
+              right: 10px;
+              width: 30px;
+              @extend %vertical-center;
+            }
+          }
+        }
+
+        // 子選單的子選單
+        > .cat-nav-sub-item {
+          background-color: $news-list-bg-color;
+          box-shadow: 0 3px 6px 0 $black-a02;
+          display: none;
+          position: absolute;
+
+          > a {
+            color: $_cat-nav-sub-item-color;
+            display: block;
+            font-size: 14px;
+            line-height: 36px;
+            padding: 0 15px;
+            text-align: left;
+            white-space: nowrap;
+
+            &:hover {
+              background-color: $_cat-nav-sub-item-hover-bgcolor;
+              color: $_cat-nav-sub-item-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #wrapper { // sass-lint:disable-line no-ids
+    .main-header {
+      width: $header-shorter-width;
+
+      nav {
+        &:not(.cat-menu) {
+          > a,
+          > span {
+            padding: 0 15px;
+          }
+        }
+      }
+
+    }
+
+    .sub-header {
+      width: $header-shorter-width;
+    }
+  }
+}

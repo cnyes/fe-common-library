@@ -35,10 +35,14 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader?-autoprefixer&modules&importLoaders=2&localIdentName=_[hash:base64:5]!postcss-loader!sass-loader?outputStyle=expanded'
+          use:
+            'css-loader?-autoprefixer&modules&importLoaders=2&localIdentName=_[hash:base64:5]!postcss-loader!sass-loader?outputStyle=expanded',
         }),
       },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-autoprefixer&importLoaders=1!postcss-loader') },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-autoprefixer&importLoaders=1!postcss-loader'),
+      },
       {
         test: /\.(jpe?g|png|ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
         loader: 'base64-inline-loader?limit=50000&name=[name].[ext]',
@@ -71,7 +75,6 @@ module.exports = {
     new webpack.IgnorePlugin(/\.\/dev/, /\/config$/),
 
     // optimizations
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -86,4 +89,3 @@ module.exports = {
     fs: 'empty',
   },
 };
-

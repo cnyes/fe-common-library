@@ -1,3 +1,4 @@
+/* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
 import React, { PureComponent, PropTypes } from 'react';
 import { Link } from 'react-router';
 import cx from 'classnames';
@@ -11,7 +12,9 @@ class Footer extends PureComponent {
 
   static renderNavs() {
     return footerLinks.navs.map(item => (
-      <a href={item.url} key={`footer-nav-${item.name}`} target="_blank" rel="noopener noreferrer">{item.title}</a>
+      <a href={item.url} key={`footer-nav-${item.name}`} target="_blank" rel="noopener noreferrer">
+        {item.title}
+      </a>
     ));
   }
 
@@ -43,19 +46,17 @@ class Footer extends PureComponent {
             <Link to="/" />
           </div>
           <div className={styles.nav}>
-            <nav>
-              {this.constructor.renderNavs()}
-            </nav>
+            <nav>{this.constructor.renderNavs()}</nav>
             <small className={styles.copyright}>
               © Copyright 2000-{thisYear} cnYES.com All rights reserved. 未經授權 不得轉載
             </small>
             <span className={styles.statement}>
-              <a href="https://news.cnyes.com/news/id/3919817" target="_blank" rel="noopener noreferrer">鉅亨網重大聲明</a>
+              <a href="https://news.cnyes.com/news/id/3919817" target="_blank" rel="noopener noreferrer">
+                鉅亨網重大聲明
+              </a>
             </span>
           </div>
-          <div className={styles.socials}>
-            {this.constructor.renderSocials()}
-          </div>
+          <div className={styles.socials}>{this.constructor.renderSocials()}</div>
         </footer>
       </div>
     );

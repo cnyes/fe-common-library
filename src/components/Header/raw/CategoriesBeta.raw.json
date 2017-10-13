@@ -1,0 +1,276 @@
+{
+  "items": [
+    {
+      "categoryId": 867,
+      "name": "公告",
+      "parentId": 0,
+      "slug": "announcement"
+    },
+    {
+      "categoryId": 860,
+      "name": "鉅亨新視界",
+      "parentId": 0,
+      "slug": "celebrity_area"
+    },
+    {
+      "categoryId": 865,
+      "name": "其他表格",
+      "parentId": 862,
+      "slug": "chart"
+    },
+    {
+      "categoryId": 848,
+      "name": "大陸房市",
+      "parentId": 846,
+      "slug": "cn_housenews"
+    },
+    {
+      "categoryId": 837,
+      "name": "大陸政經",
+      "parentId": 834,
+      "slug": "cn_macro"
+    },
+    {
+      "categoryId": 834,
+      "name": "A股港股",
+      "parentId": 0,
+      "slug": "cn_stock"
+    },
+    {
+      "categoryId": 846,
+      "name": "房產",
+      "parentId": 0,
+      "slug": "cnyeshouse"
+    },
+    {
+      "categoryId": 869,
+      "name": "興櫃公告",
+      "parentId": 867,
+      "slug": "eme_bull"
+    },
+    {
+      "categoryId": 841,
+      "name": "能源",
+      "parentId": 839,
+      "slug": "energy"
+    },
+    {
+      "categoryId": 832,
+      "name": "歐亞股",
+      "parentId": 830,
+      "slug": "eu_asia_stock"
+    },
+    {
+      "categoryId": 861,
+      "name": "時事",
+      "parentId": 0,
+      "slug": "event"
+    },
+    {
+      "categoryId": 838,
+      "name": "外匯",
+      "parentId": 0,
+      "slug": "forex"
+    },
+    {
+      "categoryId": 866,
+      "name": "表一表八",
+      "parentId": 862,
+      "slug": "form1_8"
+    },
+    {
+      "categoryId": 852,
+      "name": "基金",
+      "parentId": 851,
+      "slug": "fund"
+    },
+    {
+      "categoryId": 845,
+      "name": "債券",
+      "parentId": 839,
+      "slug": "futu_bond"
+    },
+    {
+      "categoryId": 842,
+      "name": "農作",
+      "parentId": 839,
+      "slug": "futu_produce"
+    },
+    {
+      "categoryId": 839,
+      "name": "商品期貨",
+      "parentId": 0,
+      "slug": "future"
+    },
+    {
+      "categoryId": 858,
+      "name": "綠能",
+      "parentId": 855,
+      "slug": "green"
+    },
+    {
+      "categoryId": 849,
+      "name": "香港房市",
+      "parentId": 846,
+      "slug": "hk_housenews"
+    },
+    {
+      "categoryId": 836,
+      "name": "港股",
+      "parentId": 834,
+      "slug": "hk_stock"
+    },
+    {
+      "categoryId": 855,
+      "name": "產業",
+      "parentId": 0,
+      "slug": "industry"
+    },
+    {
+      "categoryId": 840,
+      "name": "黃金",
+      "parentId": 839,
+      "slug": "precious_metals"
+    },
+    {
+      "categoryId": 843,
+      "name": "原物料",
+      "parentId": 839,
+      "slug": "raw"
+    },
+    {
+      "categoryId": 835,
+      "name": "A股",
+      "parentId": 834,
+      "slug": "sh_stock"
+    },
+    {
+      "categoryId": 853,
+      "name": "消費",
+      "parentId": 851,
+      "slug": "spending"
+    },
+    {
+      "categoryId": 859,
+      "name": "新創",
+      "parentId": 855,
+      "slug": "startup"
+    },
+    {
+      "categoryId": 856,
+      "name": "科技",
+      "parentId": 855,
+      "slug": "tech"
+    },
+    {
+      "categoryId": 857,
+      "name": "傳統",
+      "parentId": 855,
+      "slug": "traditional"
+    },
+    {
+      "categoryId": 868,
+      "name": "台股公告",
+      "parentId": 867,
+      "slug": "tw_bull"
+    },
+    {
+      "categoryId": 862,
+      "name": "台股表格",
+      "parentId": 0,
+      "slug": "tw_calc"
+    },
+    {
+      "categoryId": 863,
+      "name": "三大法人",
+      "parentId": 862,
+      "slug": "tw_fr"
+    },
+    {
+      "categoryId": 847,
+      "name": "台灣房市",
+      "parentId": 846,
+      "slug": "tw_housenews"
+    },
+    {
+      "categoryId": 854,
+      "name": "保險",
+      "parentId": 851,
+      "slug": "tw_insurance"
+    },
+    {
+      "categoryId": 828,
+      "name": "台灣政經",
+      "parentId": 826,
+      "slug": "tw_macro"
+    },
+    {
+      "categoryId": 851,
+      "name": "理財",
+      "parentId": 0,
+      "slug": "tw_money"
+    },
+    {
+      "categoryId": 829,
+      "name": "台股盤勢",
+      "parentId": 826,
+      "slug": "tw_quo"
+    },
+    {
+      "categoryId": 826,
+      "name": "台股",
+      "parentId": 0,
+      "slug": "tw_stock"
+    },
+    {
+      "categoryId": 827,
+      "name": "台股新聞",
+      "parentId": 826,
+      "slug": "tw_stock_news"
+    },
+    {
+      "categoryId": 864,
+      "name": "融資券",
+      "parentId": 862,
+      "slug": "tw_zq"
+    },
+    {
+      "categoryId": 831,
+      "name": "美股",
+      "parentId": 830,
+      "slug": "us_stock"
+    },
+    {
+      "categoryId": 850,
+      "name": "海外房市",
+      "parentId": 846,
+      "slug": "wd_housenews"
+    },
+    {
+      "categoryId": 833,
+      "name": "國際政經",
+      "parentId": 830,
+      "slug": "wd_macro"
+    },
+    {
+      "categoryId": 830,
+      "name": "國際股",
+      "parentId": 0,
+      "slug": "wd_stock"
+    },
+    {
+      "categoryId": 870,
+      "name": "投資情報",
+      "parentId": 0,
+      "slug": "advertorial"
+    },
+    {
+      "categoryId": 871,
+      "name": "晨星專欄",
+      "parentId": 851,
+      "slug": "morningstar"
+    }
+  ],
+  "message": "成功",
+  "statusCode": 200
+}
