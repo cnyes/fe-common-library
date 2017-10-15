@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import { locationShape } from 'react-router/lib/PropTypes';
 import raf from 'raf';
 import classNames from 'classnames';
-import { requestType, navsType, catNavsType } from './propTypes';
+import { requestType, navsType, catNavsType } from '../../utils/propTypes';
 import SubMenu from './SubMenu';
 import SubNavItem from './SubNavItem';
 import styles from './Header.scss';

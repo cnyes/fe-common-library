@@ -18,7 +18,7 @@ var webpackIsomorphicToolsPlugin = new WebpackIsomorphicToolsPlugin(require('./w
 module.exports = {
   context: path.resolve(__dirname),
   entry: {
-    common: ['./src/index.js'],
+    common: ['./src/static.js'],
   },
   output: {
     path: assetsPath,

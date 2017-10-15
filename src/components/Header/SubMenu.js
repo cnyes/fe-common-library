@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import idx from 'idx';
 import classNames from 'classnames';
 import { Link } from 'react-router';
-import { requestType } from './propTypes';
+import { requestType } from '../../utils/propTypes';
 import styles from './Header.scss';
 import NewsPlaceholder from './HeaderNavNewsPlaceholder/Row';
 
