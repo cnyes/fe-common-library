@@ -2,23 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/server';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import navs from './components/Header/config/navs';
-import catNavs from './components/Header/config/catNavs';
+import AllConfig from './components/Header/config/AllConfig';
 
-module.exports = function render() {
+const allHeaders = Object.keys(AllConfig).reduce((previous, keyName) => {
   return {
-    header: ReactDOM.renderToString(
+    ...previous,
+    [`${keyName}Header`]: ReactDOM.renderToString(
       <Header
-        catNavs={catNavs}
-        channel="基金"
+        catNavs={AllConfig[keyName].catNavs}
+        channel={AllConfig[keyName].name}
         enableFixedHeader={false}
         fixedHeaderType="FIXED_HEADER_FULL"
         location={{ pathname: '/' }}
-        navs={navs}
+        navs={AllConfig[keyName].navs}
         newsBaseUrl="http://news.cnyes.com"
         stickySubHeader={false}
       />
     ),
-    footer: ReactDOM.renderToString(<Footer />),
+  };
+}, {});
+
+module.exports = function render() {
+  return {
+    ...allHeaders,
+    footer: ReactDOM.renderToString(<Footer now={new Date().getTime()} />),
   };
 };

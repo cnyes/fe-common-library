@@ -8,7 +8,6 @@ import { requestType, navsType, catNavsType } from './propTypes';
 import SubMenu from './SubMenu';
 import SubNavItem from './SubNavItem';
 import styles from './Header.scss';
-// import navs from './config/navs';
 import { CategoryMappingWithSubs } from './ConstantCats';
 import { FIXED_HEADER_NONE, FIXED_HEADER_FULL, FIXED_HEADER_SUB, FIXED_HEADER_SEARCH } from './ConstantUI';
 
