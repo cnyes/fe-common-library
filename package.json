@@ -2,11 +2,11 @@
   "name": "fe-common-library",
   "version": "0.0.1",
   "description": "fe-common-library",
-  "main": "src/index.js",
+  "main": "dest/lib.js",
   "scripts": {
-    "build": "yarn run build:js",
-    "build:js": "webpack --env build",
-    "build:css": "node-sass src/style.scss lib/style.css --output-style compressed",
+    "build": "yarn run build:dest",
+    "build:dest": "webpack --verbose --colors --display-error-details --config webpack.dest.config.js --bail",
+    "build:common": "webpack --env build",
     "clean": "rimraf lib",
     "lint-staged": "lint-staged",
     "dev": "webpack --progress --colors --watch --env dev",
@@ -55,7 +55,6 @@
     "eslint-config-airbnb": "~15.0.1",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-config-cnyes": "https://bitbucket.org/cnyesrd/eslint-config-cnyes.git#2e6cc9206644",
-    "eslint-config-cnyes": "https://bitbucket.org/cnyesrd/eslint-config-cnyes.git#de5add1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
@@ -86,9 +85,10 @@
     "webpack-isomorphic-tools": "^3.0.5"
   },
   "peerDependencies": {
-    "prop-types": ">= 15.5.10",
+    "classnames": "^2.2.3",
     "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "react-dom": "^0.14.0 || ^15.0.0",
+    "react-router": "^2.0.1"
   },
   "author": "Ichi Dong",
   "license": "ISC",

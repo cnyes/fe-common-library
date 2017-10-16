@@ -2135,9 +2135,9 @@ eslint-config-airbnb@~15.0.1:
   dependencies:
     eslint-config-airbnb-base "^11.2.0"
 
-"eslint-config-cnyes@https://bitbucket.org/cnyesrd/eslint-config-cnyes.git#de5add1":
+"eslint-config-cnyes@https://bitbucket.org/cnyesrd/eslint-config-cnyes.git#2e6cc9206644":
   version "1.0.0"
-  resolved "https://bitbucket.org/cnyesrd/eslint-config-cnyes.git#de5add1cf1c478d55e0df6f3732fdb318009fe33"
+  resolved "https://bitbucket.org/cnyesrd/eslint-config-cnyes.git#2e6cc9206644ee012fa1ca30e222562584e56afc"
   dependencies:
     eslint-config-airbnb "~15.0.1"
     eslint-config-airbnb-base "~11.2.0"

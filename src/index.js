@@ -1,5 +1,4 @@
-import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import HeadersConfig from './components/Header/config/AllConfig';
+import Footer from './components/Footer/Footer';
 
-export { Footer, Header, HeadersConfig };
+export { Footer, Header };

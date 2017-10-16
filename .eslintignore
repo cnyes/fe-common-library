@@ -1,7 +1,9 @@
 static/
+dest/
 .storybook/
 .eslintrc.js
 test/_helpers/
 postcss.config.js
 webpack.config.js
+webpack.*.config.js
 webpack-isomorphic-tools.js
