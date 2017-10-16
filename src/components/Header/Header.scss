@@ -541,13 +541,14 @@ $_cat-nav-sub-item-hover-bgcolor: #dedede;
 
       nav {
         &:not(.cat-menu) {
-          > a,
-          > span {
-            padding: 0 15px;
+          > div {
+            > a,
+            > span {
+              padding: 0 15px;
+            }
           }
         }
       }
-
     }
 
     .sub-header {

@@ -540,8 +540,8 @@
   #_35NP9 ._1Jtol {
     width: 1000px;
   }
-  #_35NP9 ._1Jtol nav:not(._GG7q8) > a,
-  #_35NP9 ._1Jtol nav:not(._GG7q8) > span {
+  #_35NP9 ._1Jtol nav:not(._GG7q8) > div > a,
+  #_35NP9 ._1Jtol nav:not(._GG7q8) > div > span {
     padding: 0 15px;
   }
   #_35NP9 ._2aFMd {
