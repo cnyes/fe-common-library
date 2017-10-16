@@ -300,16 +300,23 @@ $_cat-nav-sub-item-hover-bgcolor: #dedede;
 
       li {
         font: inherit;
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
       }
 
       a {
         color: $white;
         font-size: 12px;
-        padding-top: 14px;
+        padding: 0 10px;
 
         &:hover {
           color: $gray-ccc;
         }
+      }
+
+      li + li > a {
+        border-left: $white solid 1px;
       }
     }
   }
