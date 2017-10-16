@@ -11795,7 +11795,7 @@ object-assign
         };
 
         var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-          filename: '/Users/bingo/Projects/cnyes/fe-common-library/src/components/Header/Header.js',
+          filename: '/Users/amberkuo/projects/cnyes/fe-common-library/src/components/Header/Header.js',
           components: _components,
           locals: [],
           imports: [_react3.default, _redboxReact3.default],
@@ -12639,8 +12639,8 @@ object-assign
         $export($export.G + $export.W + $export.F * !USE_NATIVE, { Symbol: $Symbol });
 
         for (
-          var es6Symbols = 'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'.split(
-              // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
+          var es6Symbols = // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
+            'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'.split(
               ','
             ),
             j = 0;
@@ -29018,7 +29018,7 @@ object-assign
         };
 
         var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-          filename: '/Users/bingo/Projects/cnyes/fe-common-library/src/components/Header/SubMenu.js',
+          filename: '/Users/amberkuo/projects/cnyes/fe-common-library/src/components/Header/SubMenu.js',
           components: _components,
           locals: [],
           imports: [_react3.default, _redboxReact3.default],
@@ -30139,7 +30139,7 @@ object-assign
         };
 
         var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-          filename: '/Users/bingo/Projects/cnyes/fe-common-library/src/components/Footer/Footer.js',
+          filename: '/Users/amberkuo/projects/cnyes/fe-common-library/src/components/Footer/Footer.js',
           components: _components,
           locals: [],
           imports: [_react3.default, _redboxReact3.default],

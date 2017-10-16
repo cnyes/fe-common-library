@@ -32,6 +32,11 @@
   box-sizing: border-box;
 }
 
+#_35NP9 a,
+#_35NP9 a:hover {
+  text-decoration: none;
+}
+
 #_35NP9 ._1GCgR {
   background-color: #a41d1e;
   display: block;
@@ -286,7 +291,7 @@
   font-size: 16px;
   height: 24px;
   line-height: 25px;
-  width: 47px;
+  padding: 0 8px;
 }
 
 #_35NP9 ._26crt ._3nBCF {
@@ -303,16 +308,23 @@
 
 #_35NP9 ._26crt ._swV7A li {
   font: inherit;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
 }
 
 #_35NP9 ._26crt ._swV7A a {
   color: #fff;
   font-size: 12px;
-  padding-top: 14px;
+  padding: 0 10px;
 }
 
 #_35NP9 ._26crt ._swV7A a:hover {
   color: #ccc;
+}
+
+#_35NP9 ._26crt ._swV7A li + li > a {
+  border-left: #fff solid 1px;
 }
 
 #_35NP9 ._34URG {
