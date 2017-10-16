@@ -39,6 +39,11 @@ $_cat-nav-sub-item-hover-bgcolor: #dedede;
   * {
     box-sizing: border-box;
   }
+
+  a,
+  a:hover {
+    text-decoration: none;
+  }
   /* NOTE: reset for export to common component end */
 
   .wrapper-fixed {
