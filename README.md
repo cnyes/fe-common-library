@@ -23,8 +23,13 @@ import 'fe-common-library/dest/lib.css'
 Use `npm` or `yarn` to install `webpack` and other dependencies
 
 ```
-$ npm install webpack -g
 $ npm install
+```
+
+or
+
+```
+$ yarn
 ```
 
 ### 2. Prepare configs for Nav Items
