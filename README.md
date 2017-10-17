@@ -46,8 +46,8 @@ fund: {
 ```
 
 	* `name` is channel name, it will show on the right of header logo.
-	* `catNavs` are main channels in main header
-	* `navs` are navs in sub-header. Or you can set `null` to hide sub-header.
+	* `navs` are main channels in main header
+	* `catNavs` are navs in sub-header. Or you can set `null` to hide sub-header.
 
 ### 3. Export html/style and get static files
 
