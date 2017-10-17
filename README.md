@@ -64,7 +64,7 @@ Now you can use them in your own projects.
 ### 4. Test and Debug
 
 There is a chrome extension for test.
-https://chrome.google.com/webstore/detail/cnyes-common-header-foote/nbanalfdjhbgmcbflgfjbfchkplgbgin?hl=zh-TW&authuser=2
+https://chrome.google.com/webstore/detail/cnyes-common-header-foote/eocaipmoojfhbakkgbbnphpndejikmlh?hl=zh-TW&authuser=2
 
 You can use it to upload the `dist/` folder to preview the change on your sites.
 
