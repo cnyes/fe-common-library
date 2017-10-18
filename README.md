@@ -42,12 +42,14 @@ fund: {
   name: '基金',
   navs: FundConfig.navs,
   catNavs: FundConfig.catNavs,
+  displayChannelName: false,
 },
 ```
 
 	* `name` is channel name, it will show on the right of header logo.
 	* `navs` are main channels in main header
 	* `catNavs` are navs in sub-header. Or you can set `null` to hide sub-header.
+  * `displayChannelName` is option, set it `false` to hide channel name. Default is true.
 
 ### 3. Export html/style and get static files
 
