@@ -46,26 +46,28 @@ function renderNavs(channel, navs, newsBaseUrl, request) {
 
 class Header extends PureComponent {
   static propTypes = {
+    catNavs: catNavsType,
     channel: PropTypes.string.isRequired,
-    location: locationShape.isRequired,
-    stickySubHeader: PropTypes.bool,
-    stickySearchHeader: PropTypes.bool,
+    disableName: PropTypes.boolean,
     fixedHeaderType: PropTypes.oneOf([FIXED_HEADER_NONE, FIXED_HEADER_FULL, FIXED_HEADER_SUB, FIXED_HEADER_SEARCH])
       .isRequired,
-    toggleFixedHeader: PropTypes.func.isRequired,
+    location: locationShape.isRequired,
+    navs: navsType.isRequired,
     newsBaseUrl: PropTypes.string.isRequired,
     request: requestType,
-    navs: navsType.isRequired,
-    catNavs: catNavsType,
+    stickySearchHeader: PropTypes.bool,
+    stickySubHeader: PropTypes.bool,
+    toggleFixedHeader: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    stickySubHeader: false,
-    stickySearchHeader: false,
+    catNavs: undefined,
+    disableName: false,
     fixedHeaderType: FIXED_HEADER_NONE,
     newsBaseUrl: '',
     request: undefined,
-    catNavs: undefined,
+    stickySearchHeader: false,
+    stickySubHeader: false,
     toggleFixedHeader: EMPTY_FUNCTION,
   };
 
@@ -189,7 +191,7 @@ class Header extends PureComponent {
   }
 
   render() {
-    const { catNavs, channel, navs, newsBaseUrl, request } = this.props;
+    const { catNavs, channel, disableName, navs, newsBaseUrl, request } = this.props;
 
     return (
       <div id={styles.wrapper} className={classNames('theme-wrapper', 'theme-header')}>
@@ -197,9 +199,11 @@ class Header extends PureComponent {
           <div className={styles['header-menu']}>
             <span className={styles['logo-wrapper']}>
               <a href="http://www.cnyes.com/" className={styles.logo} />
-              <Link to="/" className={styles['channel-label']}>
-                {channel}
-              </Link>
+              {!disableName && (
+                <Link to="/" className={styles['channel-label']}>
+                  {channel}
+                </Link>
+              )}
             </span>
             <span className={styles.actions}>
               <ul className={styles['user-nav']}>

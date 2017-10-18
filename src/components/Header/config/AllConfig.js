@@ -1,5 +1,6 @@
 import * as FundConfig from './fund/FundConfig';
 import * as DesktopConfig from './desktop/DesktopConfig';
+import * as ExmpleConfig from './example/ExampleConfig';
 
 const config = {
   fund: {
@@ -11,6 +12,11 @@ const config = {
     name: '新聞',
     navs: DesktopConfig.navs,
     catNavs: DesktopConfig.catNavs,
+  },
+  example: {
+    name: '首頁',
+    disableName: true,
+    navs: ExmpleConfig.navs,
   },
 };
 
