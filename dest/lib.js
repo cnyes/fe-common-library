@@ -11795,7 +11795,7 @@ object-assign
         };
 
         var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-          filename: '/Users/amberkuo/projects/cnyes/fe-common-library/src/components/Header/Header.js',
+          filename: '/Users/ichi/projects/fe-common-library/src/components/Header/Header.js',
           components: _components,
           locals: [],
           imports: [_react3.default, _redboxReact3.default],
@@ -12042,6 +12042,7 @@ object-assign
                   var _props2 = this.props,
                     catNavs = _props2.catNavs,
                     channel = _props2.channel,
+                    displayChannelName = _props2.displayChannelName,
                     navs = _props2.navs,
                     newsBaseUrl = _props2.newsBaseUrl,
                     request = _props2.request;
@@ -12065,11 +12066,12 @@ object-assign
                             href: 'http://www.cnyes.com/',
                             className: _Header2.default.logo,
                           }),
-                          _react3.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/', className: _Header2.default['channel-label'] },
-                            channel
-                          )
+                          displayChannelName &&
+                            _react3.default.createElement(
+                              _reactRouter.Link,
+                              { to: '/', className: _Header2.default['channel-label'] },
+                              channel
+                            )
                         ),
                         _react3.default.createElement(
                           'span',
@@ -12116,29 +12118,31 @@ object-assign
             return Header;
           })(_react2.PureComponent)),
           (_class.propTypes = {
+            catNavs: _propTypes.catNavsType,
             channel: _react2.PropTypes.string.isRequired,
-            location: _PropTypes.locationShape.isRequired,
-            stickySubHeader: _react2.PropTypes.bool,
-            stickySearchHeader: _react2.PropTypes.bool,
+            displayChannelName: _react2.PropTypes.boolean,
             fixedHeaderType: _react2.PropTypes.oneOf([
               _ConstantUI.FIXED_HEADER_NONE,
               _ConstantUI.FIXED_HEADER_FULL,
               _ConstantUI.FIXED_HEADER_SUB,
               _ConstantUI.FIXED_HEADER_SEARCH,
             ]).isRequired,
-            toggleFixedHeader: _react2.PropTypes.func.isRequired,
+            location: _PropTypes.locationShape.isRequired,
+            navs: _propTypes.navsType.isRequired,
             newsBaseUrl: _react2.PropTypes.string.isRequired,
             request: _propTypes.requestType,
-            navs: _propTypes.navsType.isRequired,
-            catNavs: _propTypes.catNavsType,
+            stickySearchHeader: _react2.PropTypes.bool,
+            stickySubHeader: _react2.PropTypes.bool,
+            toggleFixedHeader: _react2.PropTypes.func.isRequired,
           }),
           (_class.defaultProps = {
-            stickySubHeader: false,
-            stickySearchHeader: false,
+            catNavs: undefined,
+            displayChannelName: true,
             fixedHeaderType: _ConstantUI.FIXED_HEADER_NONE,
             newsBaseUrl: '',
             request: undefined,
-            catNavs: undefined,
+            stickySearchHeader: false,
+            stickySubHeader: false,
             toggleFixedHeader: EMPTY_FUNCTION,
           }),
           _temp2)
@@ -12639,8 +12643,7 @@ object-assign
         $export($export.G + $export.W + $export.F * !USE_NATIVE, { Symbol: $Symbol });
 
         for (
-          var es6Symbols = // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
-            'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'.split(
+          var es6Symbols = 'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'.split( // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
               ','
             ),
             j = 0;
@@ -29018,7 +29021,7 @@ object-assign
         };
 
         var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-          filename: '/Users/amberkuo/projects/cnyes/fe-common-library/src/components/Header/SubMenu.js',
+          filename: '/Users/ichi/projects/fe-common-library/src/components/Header/SubMenu.js',
           components: _components,
           locals: [],
           imports: [_react3.default, _redboxReact3.default],
@@ -30139,7 +30142,7 @@ object-assign
         };
 
         var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-          filename: '/Users/amberkuo/projects/cnyes/fe-common-library/src/components/Footer/Footer.js',
+          filename: '/Users/ichi/projects/fe-common-library/src/components/Footer/Footer.js',
           components: _components,
           locals: [],
           imports: [_react3.default, _redboxReact3.default],

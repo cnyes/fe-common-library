@@ -48,7 +48,7 @@ class Header extends PureComponent {
   static propTypes = {
     catNavs: catNavsType,
     channel: PropTypes.string.isRequired,
-    disableName: PropTypes.boolean,
+    displayChannelName: PropTypes.boolean,
     fixedHeaderType: PropTypes.oneOf([FIXED_HEADER_NONE, FIXED_HEADER_FULL, FIXED_HEADER_SUB, FIXED_HEADER_SEARCH])
       .isRequired,
     location: locationShape.isRequired,
@@ -62,7 +62,7 @@ class Header extends PureComponent {
 
   static defaultProps = {
     catNavs: undefined,
-    disableName: false,
+    displayChannelName: true,
     fixedHeaderType: FIXED_HEADER_NONE,
     newsBaseUrl: '',
     request: undefined,
@@ -191,7 +191,7 @@ class Header extends PureComponent {
   }
 
   render() {
-    const { catNavs, channel, disableName, navs, newsBaseUrl, request } = this.props;
+    const { catNavs, channel, displayChannelName, navs, newsBaseUrl, request } = this.props;
 
     return (
       <div id={styles.wrapper} className={classNames('theme-wrapper', 'theme-header')}>
@@ -199,7 +199,7 @@ class Header extends PureComponent {
           <div className={styles['header-menu']}>
             <span className={styles['logo-wrapper']}>
               <a href="http://www.cnyes.com/" className={styles.logo} />
-              {!disableName && (
+              {displayChannelName && (
                 <Link to="/" className={styles['channel-label']}>
                   {channel}
                 </Link>
