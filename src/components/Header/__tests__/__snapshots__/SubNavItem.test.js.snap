@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubNavItem /> should make a snapshot 1`] = `"<span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/MyFunds.aspx\\" title=\\"我的基金\\">我的基金</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/myInvestment/myInvestment.aspx?ga=nav\\" title=\\"投資組合分析\\">投資組合分析</a><a href=\\"/calcmyfundHTML5.aspx?ga=nav\\" title=\\"基金透視鏡 \\">基金透視鏡 </a></nav></span>"`;

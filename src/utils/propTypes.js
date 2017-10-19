@@ -12,7 +12,6 @@ export const navItemShape = PropTypes.shape({
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
   catSlug: PropTypes.string,
-  isHeadline: PropTypes.boolean,
   leftList: PropTypes.arrayOf(navUrlShape),
   rightListTitle: PropTypes.string,
   rightList: PropTypes.arrayOf(navUrlShape),
@@ -24,14 +23,14 @@ export const catNavSubItemShape = PropTypes.shape({
   name: PropTypes.string,
   url: PropTypes.string,
   title: PropTypes.string,
-  external: PropTypes.boolean,
+  external: PropTypes.bool,
 });
 
 export const catNavItemShape = PropTypes.shape({
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  external: PropTypes.boolean,
+  external: PropTypes.bool,
   subItems: PropTypes.arrayOf(catNavSubItemShape),
 });
 

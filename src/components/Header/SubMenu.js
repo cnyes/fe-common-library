@@ -107,7 +107,7 @@ export default class SubMenu extends Component {
 
   static defaultProps = {
     className: '',
-    catSlug: '',
+    catSlug: undefined,
     leftList: undefined,
     leftListTitle: undefined,
     rightList: undefined,

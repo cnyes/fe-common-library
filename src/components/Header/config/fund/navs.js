@@ -13,7 +13,6 @@ const navs = [
     title: '台股',
     url: 'http://www.cnyes.com/twstock/index.htm',
     catSlug: 'tw_stock',
-    isHeadline: true,
     leftList: [
       { title: '台指期', url: 'http://www.cnyes.com/twstock/index.htm' },
       { title: '選擇權', url: 'http://www.cnyes.com/twstock/index.htm' },
@@ -30,7 +29,6 @@ const navs = [
     title: '外匯',
     url: 'http://www.cnyes.com/forex/index.htm',
     catSlug: 'forex',
-    isHeadline: true,
     leftList: [
       { title: '新聞', url: '/news/cat/forex' },
       { title: '即時報價', url: 'http://traderoom.cnyes.com/global/forex.aspx' },
@@ -47,7 +45,6 @@ const navs = [
     title: '全球市場',
     url: 'http://www.cnyes.com/global/IndexImmediateQuotedPrice/',
     catSlug: 'wd_stock',
-    isHeadline: true,
     leftList: [
       { title: '國際股', url: 'http://www.cnyes.com/global/IndexImmediateQuotedPrice/' },
       { title: '美股', url: 'http://www.cnyes.com/USASTOCK/index.htm' },
@@ -66,7 +63,6 @@ const navs = [
     title: '基金',
     url: 'http://fund.cnyes.com/index.htm',
     catSlug: 'fund',
-    isHeadline: true,
     leftList: [
       { title: '我的基金', url: 'http://fund.cnyes.com/MyFunds.aspx' },
       { title: '基金搜尋', url: 'http://fund.cnyes.com/Search.aspx' },
@@ -104,7 +100,6 @@ const navs = [
     title: '理財',
     url: 'http://www.cnyes.com/money/index.htm',
     catSlug: 'tw_money',
-    isHeadline: true,
     leftList: [
       { title: '銀行服務', url: 'http://www.cnyes.com/money/BankService.aspx' },
       { title: '房貸', url: 'http://cnyes.com/mortgage' },
@@ -123,7 +118,6 @@ const navs = [
     title: '海外房產',
     url: 'http://house.cnyes.com/global/',
     catSlug: 'cnyeshouse',
-    isHeadline: true,
     leftList: [
       { title: '馬來西亞', url: 'http://house.cnyes.com/global/malaysia/default.aspx' },
       { title: '日本', url: 'http://house.cnyes.com/global/japan/' },

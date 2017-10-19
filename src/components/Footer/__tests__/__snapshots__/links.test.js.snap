@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`links should make a snapshot 1`] = `
+Object {
+  "navs": Array [
+    Object {
+      "name": "about",
+      "title": "關於我們",
+      "url": "http://www.cnyes.com/cnyes_about/cnyes_about.html",
+    },
+    Object {
+      "name": "ad",
+      "title": "廣告服務",
+      "url": "http://www.cnyes.com/cnyes_about/cnyes_AD01.html",
+    },
+    Object {
+      "name": "financial",
+      "title": "金融資訊元件",
+      "url": "http://www.cnyes.com/cnyes_about/cnyes_pas01.html",
+    },
+    Object {
+      "name": "contact",
+      "title": "聯絡我們",
+      "url": "http://www.cnyes.com/cnyes_about/cnyes_ctcUsTpe.html",
+    },
+    Object {
+      "name": "job",
+      "title": "徵才",
+      "url": "http://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=5e6042253446402330683b1d1d1d1d5f2443a363189j01",
+    },
+    Object {
+      "name": "sitemap",
+      "title": "網站地圖",
+      "url": "http://www.cnyes.com/cnyes_about/site_map.html",
+    },
+    Object {
+      "name": "legal",
+      "title": "法律聲明",
+      "url": "http://www.cnyes.com/cnyes_about/cnyes_sos01.html",
+    },
+  ],
+  "socials": Array [
+    Object {
+      "name": "facebook",
+      "title": "粉 絲 團",
+      "url": "https://www.facebook.com/cnYES/",
+    },
+    Object {
+      "name": "line",
+      "title": "鉅亨網Line",
+      "url": "https://line.me/ti/p/@ZLU0489G",
+    },
+    Object {
+      "name": "app",
+      "title": "鉅亨網APP",
+      "url": "http://www.cnyes.com/app?utm_source=cnyes&utm_medium=desktop&utm_campaign=desktop_footer",
+    },
+  ],
+}
+`;

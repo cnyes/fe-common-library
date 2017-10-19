@@ -48,7 +48,7 @@ class Header extends PureComponent {
   static propTypes = {
     catNavs: catNavsType,
     channel: PropTypes.string.isRequired,
-    displayChannelName: PropTypes.boolean,
+    displayChannelName: PropTypes.bool,
     fixedHeaderType: PropTypes.oneOf([FIXED_HEADER_NONE, FIXED_HEADER_FULL, FIXED_HEADER_SUB, FIXED_HEADER_SEARCH])
       .isRequired,
     location: locationShape.isRequired,
