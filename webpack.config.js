@@ -22,8 +22,8 @@ module.exports = {
   },
   output: {
     path: assetsPath,
-    filename: '[name]-[chunkhash].js',
-    chunkFilename: '[name]-[chunkhash].js',
+    filename: '[name].js',
+    chunkFilename: '[name].js',
     publicPath: '/dist/',
     libraryTarget: 'umd',
   },
@@ -58,7 +58,7 @@ module.exports = {
     new CleanPlugin([assetsPath], { root: projectRootPath }),
 
     // css files from the extract-text-plugin loader
-    new ExtractTextPlugin('[name]-[chunkhash].css', { allChunks: true }),
+    new ExtractTextPlugin('[name].css', { allChunks: true }),
     new StaticSiteGeneratorPlugin({}),
     new webpack.DefinePlugin({
       'process.env': {
