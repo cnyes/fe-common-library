@@ -1,5 +1,6 @@
 static/
 dest/
+coverage/
 .storybook/
 .eslintrc.js
 test/_helpers/
