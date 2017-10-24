@@ -194,7 +194,7 @@ class Header extends PureComponent {
     const { catNavs, channel, displayChannelName, navs, newsBaseUrl, request } = this.props;
 
     return (
-      <div id={styles.wrapper} className={classNames('theme-wrapper', 'theme-header')}>
+      <div id={styles['cnyes-header-wrapper']} className={classNames('theme-wrapper', 'theme-header')}>
         <header className={classNames(styles['main-header'], 'theme-main-header')}>
           <div className={styles['header-menu']}>
             <span className={styles['logo-wrapper']}>

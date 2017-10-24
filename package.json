@@ -24,7 +24,7 @@
       "prettier --single-quote --print-width 120 --trailing-comma es5 --write",
       "git add",
       "jest --findRelatedTests",
-      "eslint ."
+      "eslint --ignore-pattern"
     ],
     "*.scss": [
       "sass-lint --max-warnings 0 -v"

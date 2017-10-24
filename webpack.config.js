@@ -36,7 +36,7 @@ module.exports = {
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use:
-            'css-loader?-autoprefixer&modules&importLoaders=2&localIdentName=_[hash:base64:5]!postcss-loader!sass-loader?outputStyle=expanded',
+            'css-loader?-autoprefixer&importLoaders=2&localIdentName=_[hash:base64:5]!postcss-loader!sass-loader?outputStyle=expanded',
         }),
       },
       {

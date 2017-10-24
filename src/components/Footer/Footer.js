@@ -40,7 +40,7 @@ class Footer extends PureComponent {
 
     /* eslint-disable jsx-a11y/accessible-emoji */
     return (
-      <div id={styles.wrapper} className={cx('theme-footer-wrapper')}>
+      <div id={styles['cnyes-footer-wrapper']} className={cx('theme-footer-wrapper')}>
         <footer className={styles['main-footer']}>
           <div className={styles.logo}>
             <Link to="/" />
