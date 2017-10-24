@@ -4,6 +4,7 @@ import idx from 'idx';
 import classNames from 'classnames';
 import { Link } from 'react-router';
 import { requestType } from '../../utils/propTypes';
+import getStyleName from '../../utils/getStyleName';
 import styles from './Header.scss';
 import NewsPlaceholder from './HeaderNavNewsPlaceholder/Row';
 
@@ -45,7 +46,7 @@ function renderList(list, baseUrl) {
   });
 
   return (
-    <nav className={classNames(styles['news-list'], 'theme-news-list')}>
+    <nav className={classNames(getStyleName(styles, 'news-list'), 'theme-news-list')}>
       <h5>新聞頭條</h5>
       {!content.length ? <NewsPlaceholder /> : content}
     </nav>
@@ -59,7 +60,7 @@ function renderStaticList(list, className, wrapperStyle, listTitle) {
         <Link
           key={id} // eslint-disable-line react/no-array-index-key
           to={{ pathname: url }}
-          className={icon ? styles[`icon-${icon}`] : null}
+          className={icon ? getStyleName(styles, `icon-${icon}`) : null}
           title={title}
         >
           {title}
@@ -71,7 +72,7 @@ function renderStaticList(list, className, wrapperStyle, listTitle) {
       <a
         key={id} // eslint-disable-line react/no-array-index-key
         href={url}
-        className={icon ? styles[`icon-${icon}`] : null}
+        className={icon ? getStyleName(styles, `icon-${icon}`) : null}
         title={title}
       >
         {title}
@@ -157,18 +158,26 @@ export default class SubMenu extends Component {
     }
 
     return (
-      <div className={classNames(styles.popup, 'theme-popup')} style={(isOnlyLeft && style.narrowedPopup) || {}}>
+      <div
+        className={classNames(getStyleName(styles, 'popup'), 'theme-popup')}
+        style={(isOnlyLeft && style.narrowedPopup) || {}}
+      >
         {leftList &&
           renderStaticList(
             leftList,
-            classNames(styles['link-wrapper'], 'theme-link-wrapper'),
+            classNames(getStyleName(styles, 'link-wrapper'), 'theme-link-wrapper'),
             isOnlyLeft && style.narrowedList,
             leftListTitle
           )}
         {catSlug && request && renderList(list, newsBaseUrl)}
         {!catSlug &&
           rightList &&
-          renderStaticList(rightList, classNames(styles['news-list'], 'theme-news-list'), undefined, rightListTitle)}
+          renderStaticList(
+            rightList,
+            classNames(getStyleName(styles, 'news-list'), 'theme-news-list'),
+            undefined,
+            rightListTitle
+          )}
       </div>
     );
   }
@@ -180,14 +189,14 @@ export default class SubMenu extends Component {
     return (
       <div className={className} onMouseEnter={this.loadNewsByCat}>
         {url.length ? (
-          <a href={url} className={styles['submenu-title']}>
+          <a href={url} className={getStyleName(styles, 'submenu-title')}>
             {title}
-            {(leftList || !isOnlyLeft) && <span className={styles['with-arrow']} />}
+            {(leftList || !isOnlyLeft) && <span className={getStyleName(styles, 'with-arrow')} />}
           </a>
         ) : (
-          <span className={styles['submenu-title']}>
+          <span className={getStyleName(styles, 'submenu-title')}>
             {title}
-            {(leftList || !isOnlyLeft) && <span className={styles['with-arrow']} />}
+            {(leftList || !isOnlyLeft) && <span className={getStyleName(styles, 'with-arrow')} />}
           </span>
         )}
         {this.renderPopupMenu()}

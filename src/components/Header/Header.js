@@ -5,6 +5,7 @@ import { locationShape } from 'react-router/lib/PropTypes';
 import raf from 'raf';
 import classNames from 'classnames';
 import { requestType, navsType, catNavsType } from '../../utils/propTypes';
+import getStyleName from '../../utils/getStyleName';
 import SubMenu from './SubMenu';
 import SubNavItem from './SubNavItem';
 import styles from './Header.scss';
@@ -36,7 +37,7 @@ function findCatSlugFromUrl(pathname = '') {
 
 function renderNavs(channel, navs, newsBaseUrl, request) {
   return navs.map((nav, idx) => {
-    const className = nav.title === channel ? classNames(styles.active, 'theme-active') : '';
+    const className = nav.title === channel ? classNames(getStyleName(styles, 'active'), 'theme-active') : '';
 
     /* eslint-disable react/no-array-index-key */
     return <SubMenu key={idx} className={className} {...nav} newsBaseUrl={newsBaseUrl} request={request} />;
@@ -117,25 +118,25 @@ class Header extends PureComponent {
 
     // .js-* className is for e2e test
     let subHeaderClass = isFixed
-      ? classNames(styles['sub-header'], styles.fixed, 'theme-sub-header', 'theme-fixed')
-      : classNames(styles['sub-header'], 'theme-sub-header');
+      ? classNames(getStyleName(styles, 'sub-header'), getStyleName(styles, 'fixed'), 'theme-sub-header', 'theme-fixed')
+      : classNames(getStyleName(styles, 'sub-header'), 'theme-sub-header');
 
     if (fixedHeaderType === FIXED_HEADER_SEARCH) {
       if (isFixed) {
-        subHeaderClass = classNames(subHeaderClass, styles.hide, 'theme-hide', 'js-hide');
+        subHeaderClass = classNames(subHeaderClass, getStyleName(styles, 'hide'), 'theme-hide', 'js-hide');
       }
     } else {
       subHeaderClass =
         fixedHeaderType === (isFixed ? FIXED_HEADER_SUB : FIXED_HEADER_FULL)
           ? subHeaderClass
-          : classNames(subHeaderClass, styles.hide, 'theme-hide', 'js-hide');
+          : classNames(subHeaderClass, getStyleName(styles, 'hide'), 'theme-hide', 'js-hide');
     }
 
     subHeaderClass = classNames(subHeaderClass, 'js-header-sub-header');
 
     return (
       <div className={subHeaderClass}>
-        <nav className={classNames(styles['cat-menu'], 'theme-cat-menu')}>{this.renderCatMenu()}</nav>
+        <nav className={classNames(getStyleName(styles, 'cat-menu'), 'theme-cat-menu')}>{this.renderCatMenu()}</nav>
       </div>
     );
   }
@@ -164,7 +165,7 @@ class Header extends PureComponent {
       <form
         acceptCharset="UTF-8"
         action="https://so.cnyes.com/cnyessearch.aspx"
-        className={styles['header-search']}
+        className={getStyleName(styles, 'header-search')}
         target="_blank"
       >
         <input type="hidden" name="cx" value="015486011444191663508:8ijuvgfglaq" />
@@ -194,19 +195,19 @@ class Header extends PureComponent {
     const { catNavs, channel, displayChannelName, navs, newsBaseUrl, request } = this.props;
 
     return (
-      <div id={styles['cnyes-header-wrapper']} className={classNames('theme-wrapper', 'theme-header')}>
-        <header className={classNames(styles['main-header'], 'theme-main-header')}>
-          <div className={styles['header-menu']}>
-            <span className={styles['logo-wrapper']}>
-              <a href="http://www.cnyes.com/" className={styles.logo} />
+      <div id={getStyleName(styles, 'cnyes-header-wrapper')} className={classNames('theme-wrapper', 'theme-header')}>
+        <header className={classNames(getStyleName(styles, 'main-header'), 'theme-main-header')}>
+          <div className={getStyleName(styles, 'header-menu')}>
+            <span className={getStyleName(styles, 'logo-wrapper')}>
+              <a href="http://www.cnyes.com/" className={getStyleName(styles, 'logo')} />
               {displayChannelName && (
-                <Link to="/" className={styles['channel-label']}>
+                <Link to="/" className={getStyleName(styles, 'channel-label')}>
                   {channel}
                 </Link>
               )}
             </span>
-            <span className={styles.actions}>
-              <ul className={styles['user-nav']}>
+            <span className={getStyleName(styles, 'actions')}>
+              <ul className={getStyleName(styles, 'user-nav')}>
                 <li>
                   <a href="https://www.facebook.com/cnYES/" target="_blank" rel="noopener noreferrer">
                     粉絲團
@@ -222,8 +223,8 @@ class Header extends PureComponent {
           catNavs.length && (
             <div
               className={classNames(
-                styles['subheader-wrapper'],
-                this.props.fixedHeaderType === FIXED_HEADER_SUB && styles.fixed
+                getStyleName(styles, 'subheader-wrapper'),
+                this.props.fixedHeaderType === FIXED_HEADER_SUB && getStyleName(styles, 'fixed')
               )}
             >
               {this.renderSubHeader(true)}

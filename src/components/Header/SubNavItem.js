@@ -2,6 +2,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import cx from 'classnames';
+import getStyleName from '../../utils/getStyleName';
 import styles from './Header.scss';
 
 function SubNavItemMenu({ items }) {
@@ -13,7 +14,7 @@ function SubNavItemMenu({ items }) {
   }
 
   return (
-    <nav className={styles['cat-nav-sub-item']}>
+    <nav className={getStyleName(styles, 'cat-nav-sub-item')}>
       {items &&
         items.map(item => {
           return (
@@ -35,15 +36,15 @@ SubNavItemMenu.defaultProps = {
 };
 
 function SubNavItem({ url = '/', title, isNew, isActive, subItems, external = false }) {
-  let className = isActive ? cx(styles.active, 'theme-active') : '';
+  let className = isActive ? cx(getStyleName(styles, 'active'), 'theme-active') : '';
 
   className = cx(className, {
-    [styles['is-new']]: isNew,
-    [styles['with-arrow']]: !!subItems,
+    [getStyleName(styles, 'is-new')]: isNew,
+    [getStyleName(styles, 'with-arrow')]: !!subItems,
   });
 
   return (
-    <span className={styles['cat-nav-item']}>
+    <span className={getStyleName(styles, 'cat-nav-item')}>
       {external ? (
         <a className={className} href={url} title={title}>
           {title}
