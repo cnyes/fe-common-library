@@ -1,0 +1,31 @@
+@import '../../styles/base';
+
+#cnyes-footer-wrapper { // sass-lint:disable-line no-ids
+  /* NOTE: reset for export to common component start */
+  font-smooth: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 17px/23px $font-family;
+  text-align: left;
+
+  * {
+    box-sizing: border-box;
+  }
+  /* NOTE: reset for export to common component start end */
+
+  /* NOTE: handle for unexpected newline space start */
+  .nav {
+    nav{
+      font-size: 0;
+
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .socials {
+    font-size: 0;
+  }
+  /* NOTE: handle for unexpected newline space end */
+}

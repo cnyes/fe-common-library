@@ -7,18 +7,6 @@ $footer-bg-color: #514848;
   background-color: $footer-bg-color;
   height: $footer-height;
 
-  /* NOTE: reset for export to common component start */
-  font-smooth: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font: 400 17px/23px $font-family;
-  text-align: left;
-
-  * {
-    box-sizing: border-box;
-  }
-  /* NOTE: reset for export to common component start end */
-
   .main-footer {
     background-color: $footer-bg-color;
     color: $white;

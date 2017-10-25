@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/server';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import AllConfig from './components/Header/config/AllConfig';
+import './styles/static.scss';
 
 const allHeaders = Object.keys(AllConfig).reduce((previous, keyName) => {
   const { catNavs, name, navs, ...otherConfig } = AllConfig[keyName];
