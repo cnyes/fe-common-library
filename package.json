@@ -1,6 +1,6 @@
 {
   "name": "fe-common-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "fe-common-library",
   "main": "dest/lib.js",
   "scripts": {
