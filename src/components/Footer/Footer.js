@@ -24,7 +24,7 @@ class Footer extends PureComponent {
       <div className={getStyleName(styles, 'social-item')} key={`footer-socials-${item.name}`}>
         <div className={getStyleName(styles, 'title')}>{item.title}</div>
         <a
-          className={`${getStyleName(styles, 'social-icon')} ${getStyleName(styles, item.name)}`}
+          className={`${getStyleName(styles, 'social-icon')} ${getStyleName(styles, `cnyes-media-${item.name}`)}`}
           href={item.url}
           rel="noopener noreferrer"
           target="_blank"
