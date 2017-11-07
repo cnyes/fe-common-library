@@ -30928,7 +30928,7 @@ object-assign
                             className:
                               (0, _getStyleName2.default)(_Footer2.default, 'social-icon') +
                               ' ' +
-                              (0, _getStyleName2.default)(_Footer2.default, item.name),
+                              (0, _getStyleName2.default)(_Footer2.default, 'cnyes-media-' + item.name),
                             href: item.url,
                             rel: 'noopener noreferrer',
                             target: '_blank',
@@ -30966,9 +30966,9 @@ object-assign
           'social-item': '_1n8HS',
           title: '_2C4rE',
           'social-icon': '_11SpT',
-          facebook: '_3xPTH',
-          line: '_8XBS3',
-          app: '_2BkuK',
+          'cnyes-media-facebook': '_2WAgR',
+          'cnyes-media-line': '_1PYxM',
+          'cnyes-media-app': '_13are',
           copyright: '_2JmoE',
           statement: '_2ERbk',
         };
