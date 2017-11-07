@@ -9,7 +9,6 @@
     "build:dest": "webpack --verbose --colors --display-error-details --config webpack.dest.config.js --bail",
     "clean": "rimraf lib",
     "dev": "webpack --progress --colors --watch --env dev",
-    "eslint": "eslint --max-warnings 0 src test",
     "eslint:ci": "eslint -f tap src test > eslint.tap || ( echo 'eslint error' && exit 1 )",
     "lint-pass": "echo '\\033[4;32m♡' Awsome!!! you are great to commit ♡' \\033[0m'",
     "lint-staged": "lint-staged",
