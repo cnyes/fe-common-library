@@ -1,12 +1,13 @@
 /* eslint-disable import/first,func-names,global-require,prefer-arrow-callback */
 import React from 'react';
 import { mount } from 'enzyme';
+import SubNavItem from '../SubNavItem';
 import catNavs from '../config/fund/catNavs';
 
 describe('<SubNavItem />', function() {
-  let SubNavItem;
-  let makeSubject;
   const mockParams = catNavs[0];
+  let makeSubject;
+  let Link;
 
   beforeEach(() => {
     jest.resetModules();
@@ -14,7 +15,7 @@ describe('<SubNavItem />', function() {
     global.__SERVER__ = false;
     global.__CLIENT__ = true;
 
-    SubNavItem = require('../SubNavItem');
+    Link = jest.fn(() => <div className="mock-link" />);
 
     makeSubject = params => {
       const props = params || mockParams;
@@ -29,21 +30,53 @@ describe('<SubNavItem />', function() {
     expect(subject.html()).toMatchSnapshot();
   });
 
-  it('should be nice if !external', () => {
-    const subject = makeSubject(catNavs[1]);
+  describe('render !external', () => {
+    it('should be nice if props.Link is defined', () => {
+      const subject = makeSubject({
+        ...catNavs[1],
+        Link,
+      });
 
-    expect(subject.props().external).not.toEqual(true);
-    expect(subject.find('Link').length).toEqual(1);
-  });
-
-  it('should be nice if external', () => {
-    const subject = makeSubject({
-      ...catNavs[0],
-      subItems: null,
+      expect(subject.props().external).not.toEqual(true);
+      expect(subject.props().Link).toBeDefined();
+      expect(subject.find('.mock-link').length).toEqual(1);
     });
 
-    expect(subject.props().external).toEqual(true);
-    expect(subject.find('Link').length).toEqual(0);
+    it('should be nice if props.Link is undefined', () => {
+      const subject = makeSubject(catNavs[1]);
+
+      expect(subject.props().external).not.toEqual(true);
+      expect(subject.props().Link).not.toBeDefined();
+      expect(subject.find('.mock-link').length).toEqual(0);
+      expect(subject.find('a').length).toEqual(1);
+    });
+  });
+
+  describe('render external', () => {
+    it('should be nice if props.Link is defined', () => {
+      const subject = makeSubject({
+        ...catNavs[0],
+        subItems: null,
+        Link,
+      });
+
+      expect(subject.props().external).toEqual(true);
+      expect(subject.props().Link).toBeDefined();
+      expect(subject.find('.mock-link').length).toEqual(0);
+      expect(subject.find('a').length).toEqual(1);
+    });
+
+    it('should be nice if props.Link is undefined', () => {
+      const subject = makeSubject({
+        ...catNavs[0],
+        subItems: null,
+      });
+
+      expect(subject.props().external).toEqual(true);
+      expect(subject.props().Link).not.toBeDefined();
+      expect(subject.find('.mock-link').length).toEqual(0);
+      expect(subject.find('a').length).toEqual(1);
+    });
   });
 
   describe('SubNavItemMenu', () => {

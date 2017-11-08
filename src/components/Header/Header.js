@@ -1,6 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
 import React, { PureComponent, PropTypes } from 'react';
-import { Link } from 'react-router';
 import { locationShape } from 'react-router/lib/PropTypes';
 import raf from 'raf';
 import classNames from 'classnames';
@@ -35,12 +34,12 @@ function findCatSlugFromUrl(pathname = '') {
     : target;
 }
 
-function renderNavs(channel, navs, newsBaseUrl, request) {
+function renderNavs(channel, navs, newsBaseUrl, request, Link) {
   return navs.map((nav, idx) => {
     const className = nav.title === channel ? classNames(getStyleName(styles, 'active'), 'theme-active') : '';
 
     /* eslint-disable react/no-array-index-key */
-    return <SubMenu key={idx} className={className} {...nav} newsBaseUrl={newsBaseUrl} request={request} />;
+    return <SubMenu key={idx} className={className} {...nav} newsBaseUrl={newsBaseUrl} request={request} Link={Link} />;
     /* eslint-enable react/no-array-index-key */
   });
 }
@@ -59,6 +58,7 @@ class Header extends PureComponent {
     stickySearchHeader: PropTypes.bool,
     stickySubHeader: PropTypes.bool,
     toggleFixedHeader: PropTypes.func.isRequired,
+    Link: PropTypes.func,
   };
 
   static defaultProps = {
@@ -70,6 +70,7 @@ class Header extends PureComponent {
     stickySearchHeader: false,
     stickySubHeader: false,
     toggleFixedHeader: EMPTY_FUNCTION,
+    Link: undefined,
   };
 
   componentDidMount() {
@@ -142,7 +143,7 @@ class Header extends PureComponent {
   }
 
   renderCatMenu() {
-    const { catNavs, location } = this.props;
+    const { catNavs, location, Link } = this.props;
     const activeCatSlug = findCatSlugFromUrl(location.pathname);
 
     return catNavs.map((nav, idx) => {
@@ -155,6 +156,7 @@ class Header extends PureComponent {
           isActive={nav.name === activeCatSlug}
           subItems={nav.subItems}
           external={nav.external}
+          Link={Link}
         />
       );
     });
@@ -192,7 +194,7 @@ class Header extends PureComponent {
   }
 
   render() {
-    const { catNavs, channel, displayChannelName, navs, newsBaseUrl, request } = this.props;
+    const { catNavs, channel, displayChannelName, navs, newsBaseUrl, request, Link } = this.props;
 
     return (
       <div id={getStyleName(styles, 'cnyes-header-wrapper')} className={classNames('theme-wrapper', 'theme-header')}>
@@ -200,11 +202,16 @@ class Header extends PureComponent {
           <div className={getStyleName(styles, 'header-menu')}>
             <span className={getStyleName(styles, 'logo-wrapper')}>
               <a href="http://www.cnyes.com/" className={getStyleName(styles, 'logo')} />
-              {displayChannelName && (
-                <Link to="/" className={getStyleName(styles, 'channel-label')}>
-                  {channel}
-                </Link>
-              )}
+              {displayChannelName &&
+                (Link ? (
+                  <Link to="/" className={getStyleName(styles, 'channel-label')}>
+                    {channel}
+                  </Link>
+                ) : (
+                  <a href="/" className={getStyleName(styles, 'channel-label')}>
+                    {channel}
+                  </a>
+                ))}
             </span>
             <span className={getStyleName(styles, 'actions')}>
               <ul className={getStyleName(styles, 'user-nav')}>
@@ -217,7 +224,7 @@ class Header extends PureComponent {
               {this.renderSearch()}
             </span>
           </div>
-          <nav>{renderNavs(channel, navs, newsBaseUrl, request)}</nav>
+          <nav>{renderNavs(channel, navs, newsBaseUrl, request, Link)}</nav>
         </header>
         {catNavs &&
           catNavs.length && (

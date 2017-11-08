@@ -1,6 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
 import cx from 'classnames';
 import getStyleName from '../../utils/getStyleName';
 import styles from './Header.scss';
@@ -35,7 +34,7 @@ SubNavItemMenu.defaultProps = {
   items: undefined,
 };
 
-function SubNavItem({ url = '/', title, isNew, isActive, subItems, external = false }) {
+function SubNavItem({ url = '/', title, isNew, isActive, subItems, external = false, Link }) {
   let className = isActive ? cx(getStyleName(styles, 'active'), 'theme-active') : '';
 
   className = cx(className, {
@@ -45,7 +44,7 @@ function SubNavItem({ url = '/', title, isNew, isActive, subItems, external = fa
 
   return (
     <span className={getStyleName(styles, 'cat-nav-item')}>
-      {external ? (
+      {external || !Link ? (
         <a className={className} href={url} title={title}>
           {title}
         </a>
@@ -66,6 +65,7 @@ SubNavItem.propTypes = {
   isActive: PropTypes.bool,
   subItems: PropTypes.arrayOf(PropTypes.object),
   external: PropTypes.bool,
+  Link: PropTypes.func,
 };
 
 SubNavItem.defaultProps = {
@@ -73,6 +73,7 @@ SubNavItem.defaultProps = {
   isActive: false,
   subItems: undefined,
   external: false,
+  Link: undefined,
 };
 
 export default SubNavItem;

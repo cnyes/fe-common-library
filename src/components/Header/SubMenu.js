@@ -2,7 +2,6 @@
 import React, { Component, PropTypes } from 'react';
 import idx from 'idx';
 import classNames from 'classnames';
-import { Link } from 'react-router';
 import { requestType } from '../../utils/propTypes';
 import getStyleName from '../../utils/getStyleName';
 import styles from './Header.scss';
@@ -26,9 +25,9 @@ const style = {
   },
 };
 
-function renderList(list, baseUrl) {
+function renderList(list, baseUrl, Link) {
   const content = (list || EMPTY_ARRAY).map(item => {
-    return baseUrl.length ? (
+    return baseUrl.length || !Link ? (
       <a
         key={item.newsId}
         href={`${baseUrl}/news/id/${item.newsId}`}
@@ -53,10 +52,10 @@ function renderList(list, baseUrl) {
   );
 }
 
-function renderStaticList(list, className, wrapperStyle, listTitle) {
+function renderStaticList(list, className, wrapperStyle, listTitle, Link) {
   const content = list.map(({ url, title, icon }, id) => {
     if (url && url[0] === '/') {
-      return (
+      return Link ? (
         <Link
           key={id} // eslint-disable-line react/no-array-index-key
           to={{ pathname: url }}
@@ -65,6 +64,15 @@ function renderStaticList(list, className, wrapperStyle, listTitle) {
         >
           {title}
         </Link>
+      ) : (
+        <a
+          key={id} // eslint-disable-line react/no-array-index-key
+          href={url}
+          className={icon ? getStyleName(styles, `icon-${icon}`) : null}
+          title={title}
+        >
+          {title}
+        </a>
       );
     }
 
@@ -104,6 +112,7 @@ export default class SubMenu extends Component {
     // eslint-disable-next-line react/no-unused-prop-types
     newsBaseUrl: PropTypes.string.isRequired,
     request: requestType,
+    Link: PropTypes.func,
   };
 
   static defaultProps = {
@@ -115,6 +124,7 @@ export default class SubMenu extends Component {
     rightListTitle: undefined,
     newsBaseUrl: '',
     request: undefined,
+    Link: undefined,
   };
 
   constructor(...args) {
@@ -148,7 +158,7 @@ export default class SubMenu extends Component {
   };
 
   renderPopupMenu() {
-    const { leftList, leftListTitle, catSlug, rightList, rightListTitle, newsBaseUrl, request } = this.props;
+    const { leftList, leftListTitle, catSlug, rightList, rightListTitle, newsBaseUrl, request, Link } = this.props;
     const { list } = this.state;
     const isOnlyLeft = (!catSlug && !rightList) || (catSlug && !request);
 
@@ -167,16 +177,18 @@ export default class SubMenu extends Component {
             leftList,
             classNames(getStyleName(styles, 'link-wrapper'), 'theme-link-wrapper'),
             isOnlyLeft && style.narrowedList,
-            leftListTitle
+            leftListTitle,
+            Link
           )}
-        {catSlug && request && renderList(list, newsBaseUrl)}
+        {catSlug && request && renderList(list, newsBaseUrl, Link)}
         {!catSlug &&
           rightList &&
           renderStaticList(
             rightList,
             classNames(getStyleName(styles, 'news-list'), 'theme-news-list'),
             undefined,
-            rightListTitle
+            rightListTitle,
+            Link
           )}
       </div>
     );

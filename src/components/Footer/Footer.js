@@ -1,6 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
 import React, { PureComponent, PropTypes } from 'react';
-import { Link } from 'react-router';
 import cx from 'classnames';
 import getStyleName from '../../utils/getStyleName';
 import styles from './Footer.scss';
@@ -9,6 +8,11 @@ import footerLinks from './links';
 class Footer extends PureComponent {
   static propTypes = {
     now: PropTypes.number.isRequired,
+    Link: PropTypes.func,
+  };
+
+  static defaultProps = {
+    Link: undefined,
   };
 
   static renderNavs() {
@@ -36,16 +40,14 @@ class Footer extends PureComponent {
   }
 
   render() {
-    const { now } = this.props;
+    const { now, Link } = this.props;
     const thisYear = new Date(now).getFullYear();
 
     /* eslint-disable jsx-a11y/accessible-emoji */
     return (
       <div id={getStyleName(styles, 'cnyes-footer-wrapper')} className={cx('theme-footer-wrapper')}>
         <footer className={getStyleName(styles, 'main-footer')}>
-          <div className={getStyleName(styles, 'logo')}>
-            <Link to="/" />
-          </div>
+          <div className={getStyleName(styles, 'logo')}>{Link ? <Link to="/" /> : <a href="/" />}</div>
           <div className={getStyleName(styles, 'nav')}>
             <nav>{this.constructor.renderNavs()}</nav>
             <small className={getStyleName(styles, 'copyright')}>

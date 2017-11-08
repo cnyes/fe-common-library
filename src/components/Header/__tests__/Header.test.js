@@ -6,9 +6,11 @@ import { navs, catNavs } from '../config/fund/FundConfig';
 
 describe('<Header/>', function() {
   let makeSubject;
+  let Link;
 
   beforeEach(() => {
     jest.resetModules();
+
     const testParams = {
       catNavs,
       channel: '基金',
@@ -24,6 +26,7 @@ describe('<Header/>', function() {
       toggleFixedHeader: jest.fn(),
     };
 
+    Link = jest.fn(() => <div className="mock-link" />);
     makeSubject = (params = {}) => {
       const props = {
         ...testParams,
@@ -84,6 +87,21 @@ describe('<Header/>', function() {
 
       expect(subject.props().displayChannelName).toEqual(false);
       expect(subject.find('.logo-wrapper').html()).not.toContain(channelName);
+    });
+
+    it('should be a Link component', () => {
+      const subject = makeSubject({ Link });
+
+      expect(subject.props().Link).toBeDefined();
+      expect(subject.find('.logo-wrapper .mock-link').length).toEqual(1);
+    });
+
+    it('should be an a tag', () => {
+      const subject = makeSubject();
+
+      expect(subject.props().Link).not.toBeDefined();
+      expect(subject.find('.logo-wrapper .mock-link').length).toEqual(0);
+      expect(subject.find('.logo-wrapper').html()).toContain('channel-label');
     });
   });
 

@@ -8,12 +8,15 @@ import mockSubMenu from './mocks/mockSubMenu.json';
 
 describe('<SubMenu/>', function() {
   let makeSubject;
+  let Link;
 
   beforeEach(() => {
     jest.resetModules();
 
     global.__SERVER__ = false;
     global.__CLIENT__ = true;
+
+    Link = jest.fn(() => <div className="mock-link" />);
 
     makeSubject = params => {
       const props = params || navs[2];
@@ -88,6 +91,50 @@ describe('<SubMenu/>', function() {
       expect(subject.find('.news-list').length).toEqual(1);
       expect(subject.find('.news-list a').length).toEqual(mockSubMenu.items.data.length);
       expect(subject.find('.news-list').html()).toContain('新聞頭條');
+    });
+  });
+
+  describe('render some link right', () => {
+    it('should be nice with props.Link', () => {
+      const request = () => {};
+
+      request.get = jest.fn(() => Promise.resolve(mockSubMenu));
+
+      const subject = makeSubject({
+        ...navs[4],
+        Link,
+        request,
+      });
+
+      subject.setState({
+        list: mockSubMenu.items.data,
+      });
+      expect(subject.props().Link).toBeDefined();
+
+      expect(subject.find('.popup .link-wrapper .mock-link').length).toEqual(1);
+      expect(subject.find('.popup .link-wrapper a').length).toEqual(subject.props().leftList.length - 1);
+      expect(subject.find('.popup .news-list .mock-link').length).toEqual(mockSubMenu.items.data.length);
+    });
+
+    it('should be nice without props.Link', () => {
+      const request = () => {};
+
+      request.get = jest.fn(() => Promise.resolve(mockSubMenu));
+
+      const subject = makeSubject({
+        ...navs[4],
+        request,
+      });
+
+      subject.setState({
+        list: mockSubMenu.items.data,
+      });
+      expect(subject.props().Link).not.toBeDefined();
+
+      expect(subject.find('.popup .link-wrapper .mock-link').length).toEqual(0);
+      expect(subject.find('.popup .link-wrapper a').length).toEqual(subject.props().leftList.length);
+      expect(subject.find('.popup .news-list .mock-link').length).toEqual(0);
+      expect(subject.find('.popup .news-list a').length).toEqual(mockSubMenu.items.data.length);
     });
   });
 
