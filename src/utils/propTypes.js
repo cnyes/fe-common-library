@@ -35,3 +35,11 @@ export const catNavItemShape = PropTypes.shape({
 });
 
 export const catNavsType = PropTypes.arrayOf(catNavItemShape);
+
+export const locationShape = PropTypes.shape({
+  key: PropTypes.string,
+  pathname: PropTypes.string,
+  search: PropTypes.string,
+  hash: PropTypes.string,
+  state: PropTypes.object,
+});

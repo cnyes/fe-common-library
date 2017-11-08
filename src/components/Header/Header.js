@@ -1,9 +1,8 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
 import React, { PureComponent, PropTypes } from 'react';
-import { locationShape } from 'react-router/lib/PropTypes';
 import raf from 'raf';
 import classNames from 'classnames';
-import { requestType, navsType, catNavsType } from '../../utils/propTypes';
+import { requestType, navsType, catNavsType, locationShape } from '../../utils/propTypes';
 import getStyleName from '../../utils/getStyleName';
 import SubMenu from './SubMenu';
 import SubNavItem from './SubNavItem';
