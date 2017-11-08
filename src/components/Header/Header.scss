@@ -518,7 +518,7 @@ $_cat-nav-sub-item-hover-bgcolor: #dedede;
 }
 
 @media only screen and (max-width: 1300px) {
-  #wrapper { // sass-lint:disable-line no-ids
+  #cnyes-header-wrapper { // sass-lint:disable-line no-ids
     .main-header {
       width: $header-shorter-width;
 
