@@ -1,7 +1,7 @@
 /* eslint-disable import/first,func-names,global-require,prefer-arrow-callback */
 import React from 'react';
 import { mount } from 'enzyme';
-
+import toJson from 'enzyme-to-json';
 import SubMenu from '../SubMenu';
 import navs from '../config/fund/navs';
 import mockSubMenu from './mocks/mockSubMenu.json';
@@ -35,7 +35,7 @@ describe('<SubMenu/>', function() {
       list: mockSubMenu.items.data,
     });
 
-    expect(subject.html()).toMatchSnapshot();
+    expect(toJson(subject)).toMatchSnapshot();
   });
 
   describe('render submenu-title', () => {

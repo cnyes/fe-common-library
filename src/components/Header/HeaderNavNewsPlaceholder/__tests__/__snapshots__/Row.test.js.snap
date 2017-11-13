@@ -1,3 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Row should make a snapshot 1`] = `"<div class=\\"multi-row\\"><article class=\\"news-row-placeholder\\"><div class=\\"wrapper\\"></div></article><article class=\\"news-row-placeholder\\"><div class=\\"wrapper\\"></div></article><article class=\\"news-row-placeholder\\"><div class=\\"wrapper\\"></div></article></div>"`;
+exports[`Row should make a snapshot 1`] = `
+<Row>
+  <div
+    className="multi-row"
+  >
+    <article
+      className="news-row-placeholder"
+    >
+      <div
+        className="wrapper"
+      />
+    </article>
+    <article
+      className="news-row-placeholder"
+    >
+      <div
+        className="wrapper"
+      />
+    </article>
+    <article
+      className="news-row-placeholder"
+    >
+      <div
+        className="wrapper"
+      />
+    </article>
+  </div>
+</Row>
+`;

@@ -1,6 +1,7 @@
 /* eslint-disable import/first,func-names,global-require,prefer-arrow-callback */
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Header from '../Header';
 import { navs, catNavs } from '../config/fund/FundConfig';
 
@@ -43,7 +44,7 @@ describe('<Header/>', function() {
     expect(subject.find('SubMenu').length).toEqual(navs.length);
     expect(subject.find('SubNavItem').length).toEqual(catNavs.length * 2);
 
-    expect(subject.html()).toMatchSnapshot();
+    expect(toJson(subject)).toMatchSnapshot();
   });
 
   describe('catNavs', () => {

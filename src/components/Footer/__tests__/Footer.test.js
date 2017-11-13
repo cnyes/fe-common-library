@@ -1,6 +1,7 @@
 /* eslint-disable import/first,func-names,global-require,prefer-arrow-callback */
 import React from 'react';
 import { mount, shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Footer from '../Footer';
 
 describe('Footer component test', () => {
@@ -16,7 +17,7 @@ describe('Footer component test', () => {
 
   it('should be same as snapshot', () => {
     const wrapper = mount(<Footer now={now} />);
-    const tree = wrapper.html();
+    const tree = toJson(wrapper);
 
     expect(tree).toMatchSnapshot();
   });

@@ -1,6 +1,7 @@
 /* eslint-disable import/first,func-names,global-require,prefer-arrow-callback */
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import SubNavItem from '../SubNavItem';
 import catNavs from '../config/fund/catNavs';
 
@@ -27,7 +28,7 @@ describe('<SubNavItem />', function() {
   it('should make a snapshot', () => {
     const subject = makeSubject();
 
-    expect(subject.html()).toMatchSnapshot();
+    expect(toJson(subject)).toMatchSnapshot();
   });
 
   describe('render !external', () => {
