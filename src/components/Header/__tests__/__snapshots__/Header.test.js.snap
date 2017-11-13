@@ -1,3 +1,2534 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header/> should match snapshot 1`] = `"<div id=\\"cnyes-header-wrapper\\" class=\\"theme-wrapper theme-header\\"><header class=\\"main-header theme-main-header\\"><div class=\\"header-menu\\"><span class=\\"logo-wrapper\\"><a href=\\"http://www.cnyes.com/\\" class=\\"logo\\"></a><a href=\\"/\\" class=\\"channel-label\\">基金</a></span><span class=\\"actions\\"><ul class=\\"user-nav\\"><li><a href=\\"https://www.facebook.com/cnYES/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">粉絲團</a></li></ul><form accept-charset=\\"UTF-8\\" action=\\"https://so.cnyes.com/cnyessearch.aspx\\" class=\\"header-search\\" target=\\"_blank\\"><input type=\\"hidden\\" name=\\"cx\\" value=\\"015486011444191663508:8ijuvgfglaq\\"><input type=\\"hidden\\" name=\\"other\\" value=\\"\\"><input type=\\"hidden\\" name=\\"ie\\" value=\\"UTF-8\\"><input type=\\"hidden\\" name=\\"ga\\" value=\\"nav\\"><input name=\\"q\\" placeholder=\\"請輸入關鍵詞\\"><button type=\\"submit\\"></button></form></span></div><nav><div class=\\"\\"><a href=\\"http://www.cnyes.com/index.htm\\" class=\\"submenu-title\\"><!-- react-text: 21 -->首頁<!-- /react-text --></a></div><div class=\\"\\"><a href=\\"http://news.cnyes.com/\\" class=\\"submenu-title\\"><!-- react-text: 24 -->新聞<!-- /react-text --></a></div><div class=\\"\\"><a href=\\"http://www.cnyes.com/twstock/index.htm\\" class=\\"submenu-title\\"><!-- react-text: 27 -->台股<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"http://www.cnyes.com/twstock/index.htm\\" title=\\"台指期\\">台指期</a><a href=\\"http://www.cnyes.com/twstock/index.htm\\" title=\\"選擇權\\">選擇權</a><a href=\\"http://www.cnyes.com/warrant/tw/index.htm\\" title=\\"權證\\">權證</a><a href=\\"http://www.cnyes.com/presh/index.htm\\" title=\\"興櫃\\">興櫃</a><a href=\\"http://www.cnyes.com/pre/index.htm\\" title=\\"未上市\\">未上市</a></nav></div></div><div class=\\"\\"><a href=\\"https://stock.cnyes.com/\\" class=\\"submenu-title\\"><!-- react-text: 38 -->股市Talk<!-- /react-text --></a></div><div class=\\"\\"><a href=\\"http://www.cnyes.com/forex/index.htm\\" class=\\"submenu-title\\"><!-- react-text: 41 -->外匯<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"/news/cat/forex\\" title=\\"新聞\\">新聞</a><a href=\\"http://traderoom.cnyes.com/global/forex.aspx\\" title=\\"即時報價\\">即時報價</a><a href=\\"http://www.cnyes.com/forex/forex_index.aspx\\" title=\\"看盤室\\">看盤室</a><a href=\\"http://www.cnyes.com/forex/major.aspx\\" title=\\"主要匯價\\">主要匯價</a><a href=\\"http://www.cnyes.com/forex/forex_list.aspx\\" title=\\"交叉匯率\\">交叉匯率</a><a href=\\"http://www.cnyes.com/forex/twd.aspx\\" title=\\"新台幣\\">新台幣</a><a href=\\"http://www.cnyes.com/forex/rmb.htm\\" title=\\"人民幣\\">人民幣</a><a href=\\"http://www.cnyes.com/forex/jpy.htm\\" title=\\"日元\\">日元</a><a href=\\"http://www.cnyes.com/forex/eur.htm\\" title=\\"歐元\\">歐元</a></nav></div></div><div class=\\"\\"><a href=\\"http://www.cnyes.com/global/IndexImmediateQuotedPrice/\\" class=\\"submenu-title\\"><!-- react-text: 56 -->全球市場<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"http://www.cnyes.com/global/IndexImmediateQuotedPrice/\\" title=\\"國際股\\">國際股</a><a href=\\"http://www.cnyes.com/USASTOCK/index.htm\\" title=\\"美股\\">美股</a><a href=\\"http://www.cnyes.com/hkstock/index.htm\\" title=\\"港股\\">港股</a><a href=\\"http://www.cnyes.com/shstock/index.htm\\" title=\\"滬深股\\">滬深股</a><a href=\\"http://www.cnyes.com/JP/index.htm\\" title=\\"日股\\">日股</a><a href=\\"http://www.cnyes.com/futures/index.htm\\" title=\\"國際期貨\\">國際期貨</a><a href=\\"http://www.cnyes.com/bond/index.htm\\" title=\\"債券\\">債券</a><a href=\\"http://www.cnyes.com/gold/index.htm\\" title=\\"黃金\\">黃金</a><a href=\\"http://www.cnyes.com/CentralBank/index.htm\\" title=\\"全球央行\\">全球央行</a><a href=\\"http://www.cnyes.com/economy/indicator/Page/schedule.aspx\\" title=\\"經濟指標\\">經濟指標</a><a href=\\"http://money.cnyes.com/StockQ.aspx\\" title=\\"StockQ\\">StockQ</a></nav></div></div><div class=\\"active theme-active\\"><a href=\\"http://fund.cnyes.com/index.htm\\" class=\\"submenu-title\\"><!-- react-text: 73 -->基金<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"http://fund.cnyes.com/MyFunds.aspx\\" title=\\"我的基金\\">我的基金</a><a href=\\"http://fund.cnyes.com/Search.aspx\\" title=\\"基金搜尋\\">基金搜尋</a><a href=\\"http://fund.cnyes.com/ranking/index.htm\\" title=\\"基金排行\\">基金排行</a><a href=\\"http://fund.cnyes.com/Fixedincome/\\" title=\\"債券專區\\">債券專區</a><a href=\\"http://fund.cnyes.com/dividend/index.htm\\" title=\\"配息專區\\">配息專區</a><a href=\\"http://fund.cnyes.com/report/report/index.htm\\" title=\\"研究報告\\">研究報告</a><a href=\\"https://www.fundsyes.com/?utm_source=cnyes&amp;utm_medium=index_menu\\" title=\\"基金交易平台\\">基金交易平台</a></nav></div></div><div class=\\"\\"><span class=\\"submenu-title\\"><!-- react-text: 86 -->交易<!-- /react-text --><span class=\\"with-arrow\\"></span></span><div class=\\"popup theme-popup\\"><nav class=\\"link-wrapper theme-link-wrapper\\"><a href=\\"https://www.fundsyes.com/Index.aspx?utm_source=cnyes&amp;utm_medium=channel_mainpage\\" title=\\"基金交易\\">基金交易</a></nav><nav class=\\"news-list theme-news-list\\"><h5>鉅亨基金交易平台</h5><a href=\\"https://www.fundsyes.com/Login.aspx?utm_source=cnyes&amp;utm_medium=channel_login\\" title=\\"交易登入\\">交易登入</a><a href=\\"https://www.fundsyes.com/launch/fund_index.htm?utm_source=cnyes&amp;utm_medium=channel_newuser\\" title=\\"免費開戶\\">免費開戶</a><a href=\\"https://www.fundsyes.com/Guide/Expenses.aspx?utm_source=cnyes&amp;utm_medium=channel_preferential\\" title=\\"最新優惠\\">最新優惠</a><a href=\\"https://www.fundsyes.com/Tool/SuggestionList.aspx?utm_source=cnyes&amp;utm_medium=channel_radar\\" title=\\"投資雷達\\">投資雷達</a></nav></div></div><div class=\\"\\"><a href=\\"http://www.cnyes.com/money/index.htm\\" class=\\"submenu-title\\"><!-- react-text: 99 -->理財<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"http://www.cnyes.com/money/BankService.aspx\\" title=\\"銀行服務\\">銀行服務</a><a href=\\"http://cnyes.com/mortgage\\" title=\\"房貸\\">房貸</a><a href=\\"http://www.cnyes.com/money/fundptcalcu.aspx\\" title=\\"投資分析\\">投資分析</a><a href=\\"http://www.cnyes.com/money/livelihoodPrice.htm\\" title=\\"民生物價\\">民生物價</a><a href=\\"http://www.cnyes.com/money/BankCalculation.aspx\\" title=\\"試算工具\\">試算工具</a><a href=\\"/news/cat/tw_money\\" title=\\"理財新聞\\">理財新聞</a><a href=\\"http://mag.cnyes.com/Column/financial/index.shtml\\" title=\\"理財雜誌\\">理財雜誌</a><a href=\\"http://www.cnyes.com/fixedincome/index.htm\\" title=\\"固定收益\\">固定收益</a><a href=\\"http://www.cnyes.com/insurance/index.htm\\" title=\\"保險\\">保險</a><a href=\\"http://www.cnyes.com/leases/index.htm\\" title=\\"租賃\\">租賃</a><a href=\\"http://www.cnyes.com/globalinvest/GlobalStock.htm\\" title=\\"股市地圖\\">股市地圖</a></nav></div></div><div class=\\"\\"><a href=\\"http://house.cnyes.com/global/\\" class=\\"submenu-title\\"><!-- react-text: 116 -->海外房產<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"http://house.cnyes.com/global/malaysia/default.aspx\\" title=\\"馬來西亞\\">馬來西亞</a><a href=\\"http://house.cnyes.com/global/japan/\\" title=\\"日本\\">日本</a><a href=\\"http://house.cnyes.com/global/thailand/\\" title=\\"泰國\\">泰國</a><a href=\\"http://house.cnyes.com/global/Cambodia/\\" title=\\"柬埔寨\\">柬埔寨</a><a href=\\"http://house.cnyes.com/global/Australia/\\" title=\\"澳洲\\">澳洲</a><a href=\\"http://house.cnyes.com/global/American/\\" title=\\"美國\\">美國</a><a href=\\"http://house.cnyes.com/\\" title=\\"台灣\\">台灣</a><a href=\\"http://house.cnyes.com/News/\\" title=\\"房地產新聞\\">房地產新聞</a></nav></div></div><div class=\\"\\"><a href=\\"http://blog.cnyes.com/\\" class=\\"submenu-title\\"><!-- react-text: 130 -->部落格<!-- /react-text --><span class=\\"with-arrow\\"></span></a><div class=\\"popup theme-popup\\" style=\\"width: 120px; height: auto; overflow: visible;\\"><nav class=\\"link-wrapper theme-link-wrapper\\" style=\\"height: auto;\\"><a href=\\"http://blog.cnyes.com/Excerpt.aspx\\" title=\\"名家專區\\">名家專區</a><a href=\\"http://blog.cnyes.com/SearchBlog.aspx?Purpose=Hit&amp;ga=nav\\" title=\\"人氣排行榜\\">人氣排行榜</a><a href=\\"http://blog.cnyes.com/WorldFresh.aspx\\" title=\\"最新文章\\">最新文章</a></nav></div></div><div class=\\"\\"><a href=\\"http://theme.cnyes.com/fund/index.html\\" class=\\"submenu-title\\"><!-- react-text: 139 -->主題投資<!-- /react-text --></a></div></nav></header><div class=\\"subheader-wrapper\\"><div class=\\"sub-header fixed theme-sub-header theme-fixed hide theme-hide js-hide js-header-sub-header\\"><nav class=\\"cat-menu theme-cat-menu\\"><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/MyFunds.aspx\\" title=\\"我的基金\\">我的基金</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/myInvestment/myInvestment.aspx?ga=nav\\" title=\\"投資組合分析\\">投資組合分析</a><a href=\\"/calcmyfundHTML5.aspx?ga=nav\\" title=\\"基金透視鏡 \\">基金透視鏡 </a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"is-new\\" href=\\"/search/\\" title=\\"基金搜尋\\">基金搜尋</a></span><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/ranking/index.htm?ga=nav\\" title=\\"基金排行\\">基金排行</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/sector-ranking/index.htm?ga=nav\\" title=\\"組別分類排行\\">組別分類排行</a><a href=\\"/sector-ranking-yearly/index.htm?ga=nav\\" title=\\"組別年度績效排行\\">組別年度績效排行</a><a href=\\"/popular/index.htm?ga=nav\\" title=\\"熱門基金排行\\">熱門基金排行</a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/Fixedincome/\\" title=\\"債券專區\\">債券專區</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/Fixedincome/index.aspx\\" title=\\"債券基金排行\\">債券基金排行</a><a href=\\"/Fixedincome/search.aspx\\" title=\\"債券基金搜尋器\\">債券基金搜尋器</a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"\\" href=\\"/dividend/index.htm\\" title=\\"配息專區\\">配息專區</a></span><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/report/report/index.htm\\" title=\\"研究報告\\">研究報告</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/report/manager/index.htm?ga=nav\\" title=\\"經理人訪談\\">經理人訪談</a><a href=\\"http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav\\" title=\\"亞債新視野\\">亞債新視野</a><a href=\\"/report/MorningStar/index.htm?ga=nav\\" title=\\"晨星專欄\\">晨星專欄</a><a href=\\"/report/cnyes/index.htm?ga=nav\\" title=\\"鉅亨投資雷達\\">鉅亨投資雷達</a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"\\" href=\\"https://www.fundsyes.com/?utm_source=cnyes&amp;utm_medium=fundchannel_menu2\\" title=\\"基金交易平台\\">基金交易平台</a></span></nav></div><div class=\\"sub-header theme-sub-header hide theme-hide js-hide js-header-sub-header\\"><nav class=\\"cat-menu theme-cat-menu\\"><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/MyFunds.aspx\\" title=\\"我的基金\\">我的基金</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/myInvestment/myInvestment.aspx?ga=nav\\" title=\\"投資組合分析\\">投資組合分析</a><a href=\\"/calcmyfundHTML5.aspx?ga=nav\\" title=\\"基金透視鏡 \\">基金透視鏡 </a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"is-new\\" href=\\"/search/\\" title=\\"基金搜尋\\">基金搜尋</a></span><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/ranking/index.htm?ga=nav\\" title=\\"基金排行\\">基金排行</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/sector-ranking/index.htm?ga=nav\\" title=\\"組別分類排行\\">組別分類排行</a><a href=\\"/sector-ranking-yearly/index.htm?ga=nav\\" title=\\"組別年度績效排行\\">組別年度績效排行</a><a href=\\"/popular/index.htm?ga=nav\\" title=\\"熱門基金排行\\">熱門基金排行</a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/Fixedincome/\\" title=\\"債券專區\\">債券專區</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/Fixedincome/index.aspx\\" title=\\"債券基金排行\\">債券基金排行</a><a href=\\"/Fixedincome/search.aspx\\" title=\\"債券基金搜尋器\\">債券基金搜尋器</a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"\\" href=\\"/dividend/index.htm\\" title=\\"配息專區\\">配息專區</a></span><span class=\\"cat-nav-item\\"><a class=\\"with-arrow\\" href=\\"/report/report/index.htm\\" title=\\"研究報告\\">研究報告</a><nav class=\\"cat-nav-sub-item\\"><a href=\\"/report/manager/index.htm?ga=nav\\" title=\\"經理人訪談\\">經理人訪談</a><a href=\\"http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav\\" title=\\"亞債新視野\\">亞債新視野</a><a href=\\"/report/MorningStar/index.htm?ga=nav\\" title=\\"晨星專欄\\">晨星專欄</a><a href=\\"/report/cnyes/index.htm?ga=nav\\" title=\\"鉅亨投資雷達\\">鉅亨投資雷達</a></nav></span><span class=\\"cat-nav-item\\"><a class=\\"\\" href=\\"https://www.fundsyes.com/?utm_source=cnyes&amp;utm_medium=fundchannel_menu2\\" title=\\"基金交易平台\\">基金交易平台</a></span></nav></div></div></div>"`;
+exports[`<Header/> should match snapshot 1`] = `
+<Header
+  catNavs={
+    Array [
+      Object {
+        "external": true,
+        "name": "myfunds",
+        "subItems": Array [
+          Object {
+            "external": true,
+            "name": "myInvestment",
+            "title": "投資組合分析",
+            "url": "/myInvestment/myInvestment.aspx?ga=nav",
+          },
+          Object {
+            "external": true,
+            "name": "calcmyfundHTML5",
+            "title": "基金透視鏡 ",
+            "url": "/calcmyfundHTML5.aspx?ga=nav",
+          },
+        ],
+        "title": "我的基金",
+        "url": "/MyFunds.aspx",
+      },
+      Object {
+        "name": "search",
+        "title": "基金搜尋",
+        "url": "/search/",
+      },
+      Object {
+        "external": true,
+        "name": "ranking",
+        "subItems": Array [
+          Object {
+            "external": true,
+            "name": "sector-ranking",
+            "title": "組別分類排行",
+            "url": "/sector-ranking/index.htm?ga=nav",
+          },
+          Object {
+            "external": true,
+            "name": "sector-ranking-yearly",
+            "title": "組別年度績效排行",
+            "url": "/sector-ranking-yearly/index.htm?ga=nav",
+          },
+          Object {
+            "external": true,
+            "name": "popylar-ranking",
+            "title": "熱門基金排行",
+            "url": "/popular/index.htm?ga=nav",
+          },
+        ],
+        "title": "基金排行",
+        "url": "/ranking/index.htm?ga=nav",
+      },
+      Object {
+        "external": true,
+        "name": "fixedincome",
+        "subItems": Array [
+          Object {
+            "external": true,
+            "name": "fixed-income",
+            "title": "債券基金排行",
+            "url": "/Fixedincome/index.aspx",
+          },
+          Object {
+            "external": true,
+            "name": "fixed-income-search",
+            "title": "債券基金搜尋器",
+            "url": "/Fixedincome/search.aspx",
+          },
+        ],
+        "title": "債券專區",
+        "url": "/Fixedincome/",
+      },
+      Object {
+        "external": true,
+        "name": "dividend",
+        "title": "配息專區",
+        "url": "/dividend/index.htm",
+      },
+      Object {
+        "external": true,
+        "name": "report",
+        "subItems": Array [
+          Object {
+            "external": true,
+            "name": "manager-view",
+            "title": "經理人訪談",
+            "url": "/report/manager/index.htm?ga=nav",
+          },
+          Object {
+            "external": true,
+            "name": "fidelity-aasia-bond",
+            "title": "亞債新視野",
+            "url": "http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav",
+          },
+          Object {
+            "external": true,
+            "name": "moring-star",
+            "title": "晨星專欄",
+            "url": "/report/MorningStar/index.htm?ga=nav",
+          },
+          Object {
+            "external": true,
+            "name": "cnyes-radar",
+            "title": "鉅亨投資雷達",
+            "url": "/report/cnyes/index.htm?ga=nav",
+          },
+        ],
+        "title": "研究報告",
+        "url": "/report/report/index.htm",
+      },
+      Object {
+        "external": true,
+        "name": "fundsyes",
+        "title": "基金交易平台",
+        "url": "https://www.fundsyes.com/?utm_source=cnyes&utm_medium=fundchannel_menu2",
+      },
+    ]
+  }
+  channel="基金"
+  displayChannelName={true}
+  fixedHeaderType="FIXED_HEADER_NONE"
+  location={
+    Object {
+      "action": "",
+      "key": "",
+      "pathname": "/news/cat/headline",
+      "search": "",
+      "state": Object {},
+    }
+  }
+  navs={
+    Array [
+      Object {
+        "title": "首頁",
+        "url": "http://www.cnyes.com/index.htm",
+      },
+      Object {
+        "title": "新聞",
+        "url": "http://news.cnyes.com/",
+      },
+      Object {
+        "catSlug": "tw_stock",
+        "leftList": Array [
+          Object {
+            "title": "台指期",
+            "url": "http://www.cnyes.com/twstock/index.htm",
+          },
+          Object {
+            "title": "選擇權",
+            "url": "http://www.cnyes.com/twstock/index.htm",
+          },
+          Object {
+            "title": "權證",
+            "url": "http://www.cnyes.com/warrant/tw/index.htm",
+          },
+          Object {
+            "title": "興櫃",
+            "url": "http://www.cnyes.com/presh/index.htm",
+          },
+          Object {
+            "title": "未上市",
+            "url": "http://www.cnyes.com/pre/index.htm",
+          },
+        ],
+        "title": "台股",
+        "url": "http://www.cnyes.com/twstock/index.htm",
+      },
+      Object {
+        "title": "股市Talk",
+        "url": "https://stock.cnyes.com/",
+      },
+      Object {
+        "catSlug": "forex",
+        "leftList": Array [
+          Object {
+            "title": "新聞",
+            "url": "/news/cat/forex",
+          },
+          Object {
+            "title": "即時報價",
+            "url": "http://traderoom.cnyes.com/global/forex.aspx",
+          },
+          Object {
+            "title": "看盤室",
+            "url": "http://www.cnyes.com/forex/forex_index.aspx",
+          },
+          Object {
+            "title": "主要匯價",
+            "url": "http://www.cnyes.com/forex/major.aspx",
+          },
+          Object {
+            "title": "交叉匯率",
+            "url": "http://www.cnyes.com/forex/forex_list.aspx",
+          },
+          Object {
+            "title": "新台幣",
+            "url": "http://www.cnyes.com/forex/twd.aspx",
+          },
+          Object {
+            "title": "人民幣",
+            "url": "http://www.cnyes.com/forex/rmb.htm",
+          },
+          Object {
+            "title": "日元",
+            "url": "http://www.cnyes.com/forex/jpy.htm",
+          },
+          Object {
+            "title": "歐元",
+            "url": "http://www.cnyes.com/forex/eur.htm",
+          },
+        ],
+        "title": "外匯",
+        "url": "http://www.cnyes.com/forex/index.htm",
+      },
+      Object {
+        "catSlug": "wd_stock",
+        "leftList": Array [
+          Object {
+            "title": "國際股",
+            "url": "http://www.cnyes.com/global/IndexImmediateQuotedPrice/",
+          },
+          Object {
+            "title": "美股",
+            "url": "http://www.cnyes.com/USASTOCK/index.htm",
+          },
+          Object {
+            "title": "港股",
+            "url": "http://www.cnyes.com/hkstock/index.htm",
+          },
+          Object {
+            "title": "滬深股",
+            "url": "http://www.cnyes.com/shstock/index.htm",
+          },
+          Object {
+            "title": "日股",
+            "url": "http://www.cnyes.com/JP/index.htm",
+          },
+          Object {
+            "title": "國際期貨",
+            "url": "http://www.cnyes.com/futures/index.htm",
+          },
+          Object {
+            "title": "債券",
+            "url": "http://www.cnyes.com/bond/index.htm",
+          },
+          Object {
+            "title": "黃金",
+            "url": "http://www.cnyes.com/gold/index.htm",
+          },
+          Object {
+            "title": "全球央行",
+            "url": "http://www.cnyes.com/CentralBank/index.htm",
+          },
+          Object {
+            "title": "經濟指標",
+            "url": "http://www.cnyes.com/economy/indicator/Page/schedule.aspx",
+          },
+          Object {
+            "title": "StockQ",
+            "url": "http://money.cnyes.com/StockQ.aspx",
+          },
+        ],
+        "title": "全球市場",
+        "url": "http://www.cnyes.com/global/IndexImmediateQuotedPrice/",
+      },
+      Object {
+        "catSlug": "fund",
+        "leftList": Array [
+          Object {
+            "title": "我的基金",
+            "url": "http://fund.cnyes.com/MyFunds.aspx",
+          },
+          Object {
+            "title": "基金搜尋",
+            "url": "http://fund.cnyes.com/Search.aspx",
+          },
+          Object {
+            "title": "基金排行",
+            "url": "http://fund.cnyes.com/ranking/index.htm",
+          },
+          Object {
+            "title": "債券專區",
+            "url": "http://fund.cnyes.com/Fixedincome/",
+          },
+          Object {
+            "title": "配息專區",
+            "url": "http://fund.cnyes.com/dividend/index.htm",
+          },
+          Object {
+            "title": "研究報告",
+            "url": "http://fund.cnyes.com/report/report/index.htm",
+          },
+          Object {
+            "title": "基金交易平台",
+            "url": "https://www.fundsyes.com/?utm_source=cnyes&utm_medium=index_menu",
+          },
+        ],
+        "title": "基金",
+        "url": "http://fund.cnyes.com/index.htm",
+      },
+      Object {
+        "leftList": Array [
+          Object {
+            "title": "基金交易",
+            "url": "https://www.fundsyes.com/Index.aspx?utm_source=cnyes&utm_medium=channel_mainpage",
+          },
+        ],
+        "rightList": Array [
+          Object {
+            "title": "交易登入",
+            "url": "https://www.fundsyes.com/Login.aspx?utm_source=cnyes&utm_medium=channel_login",
+          },
+          Object {
+            "title": "免費開戶",
+            "url": "https://www.fundsyes.com/launch/fund_index.htm?utm_source=cnyes&utm_medium=channel_newuser",
+          },
+          Object {
+            "title": "最新優惠",
+            "url": "https://www.fundsyes.com/Guide/Expenses.aspx?utm_source=cnyes&utm_medium=channel_preferential",
+          },
+          Object {
+            "title": "投資雷達",
+            "url": "https://www.fundsyes.com/Tool/SuggestionList.aspx?utm_source=cnyes&utm_medium=channel_radar",
+          },
+        ],
+        "rightListTitle": "鉅亨基金交易平台",
+        "title": "交易",
+        "url": "",
+      },
+      Object {
+        "catSlug": "tw_money",
+        "leftList": Array [
+          Object {
+            "title": "銀行服務",
+            "url": "http://www.cnyes.com/money/BankService.aspx",
+          },
+          Object {
+            "title": "房貸",
+            "url": "http://cnyes.com/mortgage",
+          },
+          Object {
+            "title": "投資分析",
+            "url": "http://www.cnyes.com/money/fundptcalcu.aspx",
+          },
+          Object {
+            "title": "民生物價",
+            "url": "http://www.cnyes.com/money/livelihoodPrice.htm",
+          },
+          Object {
+            "title": "試算工具",
+            "url": "http://www.cnyes.com/money/BankCalculation.aspx",
+          },
+          Object {
+            "title": "理財新聞",
+            "url": "/news/cat/tw_money",
+          },
+          Object {
+            "title": "理財雜誌",
+            "url": "http://mag.cnyes.com/Column/financial/index.shtml",
+          },
+          Object {
+            "title": "固定收益",
+            "url": "http://www.cnyes.com/fixedincome/index.htm",
+          },
+          Object {
+            "title": "保險",
+            "url": "http://www.cnyes.com/insurance/index.htm",
+          },
+          Object {
+            "title": "租賃",
+            "url": "http://www.cnyes.com/leases/index.htm",
+          },
+          Object {
+            "title": "股市地圖",
+            "url": "http://www.cnyes.com/globalinvest/GlobalStock.htm",
+          },
+        ],
+        "title": "理財",
+        "url": "http://www.cnyes.com/money/index.htm",
+      },
+      Object {
+        "catSlug": "cnyeshouse",
+        "leftList": Array [
+          Object {
+            "title": "馬來西亞",
+            "url": "http://house.cnyes.com/global/malaysia/default.aspx",
+          },
+          Object {
+            "title": "日本",
+            "url": "http://house.cnyes.com/global/japan/",
+          },
+          Object {
+            "title": "泰國",
+            "url": "http://house.cnyes.com/global/thailand/",
+          },
+          Object {
+            "title": "柬埔寨",
+            "url": "http://house.cnyes.com/global/Cambodia/",
+          },
+          Object {
+            "title": "澳洲",
+            "url": "http://house.cnyes.com/global/Australia/",
+          },
+          Object {
+            "title": "美國",
+            "url": "http://house.cnyes.com/global/American/",
+          },
+          Object {
+            "title": "台灣",
+            "url": "http://house.cnyes.com/",
+          },
+          Object {
+            "title": "房地產新聞",
+            "url": "http://house.cnyes.com/News/",
+          },
+        ],
+        "title": "海外房產",
+        "url": "http://house.cnyes.com/global/",
+      },
+      Object {
+        "leftList": Array [
+          Object {
+            "title": "名家專區",
+            "url": "http://blog.cnyes.com/Excerpt.aspx",
+          },
+          Object {
+            "title": "人氣排行榜",
+            "url": "http://blog.cnyes.com/SearchBlog.aspx?Purpose=Hit&ga=nav",
+          },
+          Object {
+            "title": "最新文章",
+            "url": "http://blog.cnyes.com/WorldFresh.aspx",
+          },
+        ],
+        "title": "部落格",
+        "url": "http://blog.cnyes.com/",
+      },
+      Object {
+        "title": "主題投資",
+        "url": "http://theme.cnyes.com/fund/index.html",
+      },
+    ]
+  }
+  newsBaseUrl=""
+  stickySearchHeader={false}
+  stickySubHeader={false}
+  toggleFixedHeader={[Function]}
+>
+  <div
+    className="theme-wrapper theme-header"
+    id="cnyes-header-wrapper"
+  >
+    <header
+      className="main-header theme-main-header"
+    >
+      <div
+        className="header-menu"
+      >
+        <span
+          className="logo-wrapper"
+        >
+          <a
+            className="logo"
+            href="http://www.cnyes.com/"
+          />
+          <a
+            className="channel-label"
+            href="/"
+          >
+            基金
+          </a>
+        </span>
+        <span
+          className="actions"
+        >
+          <ul
+            className="user-nav"
+          >
+            <li>
+              <a
+                href="https://www.facebook.com/cnYES/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                粉絲團
+              </a>
+            </li>
+          </ul>
+          <form
+            acceptCharset="UTF-8"
+            action="https://so.cnyes.com/cnyessearch.aspx"
+            className="header-search"
+            target="_blank"
+          >
+            <input
+              name="cx"
+              type="hidden"
+              value="015486011444191663508:8ijuvgfglaq"
+            />
+            <input
+              name="other"
+              type="hidden"
+              value=""
+            />
+            <input
+              name="ie"
+              type="hidden"
+              value="UTF-8"
+            />
+            <input
+              name="ga"
+              type="hidden"
+              value="nav"
+            />
+            <input
+              name="q"
+              onChange={[Function]}
+              placeholder="請輸入關鍵詞"
+            />
+            <button
+              type="submit"
+            />
+          </form>
+        </span>
+      </div>
+      <nav>
+        <SubMenu
+          className=""
+          key="0"
+          newsBaseUrl=""
+          title="首頁"
+          url="http://www.cnyes.com/index.htm"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://www.cnyes.com/index.htm"
+            >
+              首頁
+            </a>
+          </div>
+        </SubMenu>
+        <SubMenu
+          className=""
+          key="1"
+          newsBaseUrl=""
+          title="新聞"
+          url="http://news.cnyes.com/"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://news.cnyes.com/"
+            >
+              新聞
+            </a>
+          </div>
+        </SubMenu>
+        <SubMenu
+          catSlug="tw_stock"
+          className=""
+          key="2"
+          leftList={
+            Array [
+              Object {
+                "title": "台指期",
+                "url": "http://www.cnyes.com/twstock/index.htm",
+              },
+              Object {
+                "title": "選擇權",
+                "url": "http://www.cnyes.com/twstock/index.htm",
+              },
+              Object {
+                "title": "權證",
+                "url": "http://www.cnyes.com/warrant/tw/index.htm",
+              },
+              Object {
+                "title": "興櫃",
+                "url": "http://www.cnyes.com/presh/index.htm",
+              },
+              Object {
+                "title": "未上市",
+                "url": "http://www.cnyes.com/pre/index.htm",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="台股"
+          url="http://www.cnyes.com/twstock/index.htm"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://www.cnyes.com/twstock/index.htm"
+            >
+              台股
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/twstock/index.htm"
+                  key="0"
+                  title="台指期"
+                >
+                  台指期
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/twstock/index.htm"
+                  key="1"
+                  title="選擇權"
+                >
+                  選擇權
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/warrant/tw/index.htm"
+                  key="2"
+                  title="權證"
+                >
+                  權證
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/presh/index.htm"
+                  key="3"
+                  title="興櫃"
+                >
+                  興櫃
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/pre/index.htm"
+                  key="4"
+                  title="未上市"
+                >
+                  未上市
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          className=""
+          key="3"
+          newsBaseUrl=""
+          title="股市Talk"
+          url="https://stock.cnyes.com/"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="https://stock.cnyes.com/"
+            >
+              股市Talk
+            </a>
+          </div>
+        </SubMenu>
+        <SubMenu
+          catSlug="forex"
+          className=""
+          key="4"
+          leftList={
+            Array [
+              Object {
+                "title": "新聞",
+                "url": "/news/cat/forex",
+              },
+              Object {
+                "title": "即時報價",
+                "url": "http://traderoom.cnyes.com/global/forex.aspx",
+              },
+              Object {
+                "title": "看盤室",
+                "url": "http://www.cnyes.com/forex/forex_index.aspx",
+              },
+              Object {
+                "title": "主要匯價",
+                "url": "http://www.cnyes.com/forex/major.aspx",
+              },
+              Object {
+                "title": "交叉匯率",
+                "url": "http://www.cnyes.com/forex/forex_list.aspx",
+              },
+              Object {
+                "title": "新台幣",
+                "url": "http://www.cnyes.com/forex/twd.aspx",
+              },
+              Object {
+                "title": "人民幣",
+                "url": "http://www.cnyes.com/forex/rmb.htm",
+              },
+              Object {
+                "title": "日元",
+                "url": "http://www.cnyes.com/forex/jpy.htm",
+              },
+              Object {
+                "title": "歐元",
+                "url": "http://www.cnyes.com/forex/eur.htm",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="外匯"
+          url="http://www.cnyes.com/forex/index.htm"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://www.cnyes.com/forex/index.htm"
+            >
+              外匯
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="/news/cat/forex"
+                  key="0"
+                  title="新聞"
+                >
+                  新聞
+                </a>
+                <a
+                  className={null}
+                  href="http://traderoom.cnyes.com/global/forex.aspx"
+                  key="1"
+                  title="即時報價"
+                >
+                  即時報價
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/forex_index.aspx"
+                  key="2"
+                  title="看盤室"
+                >
+                  看盤室
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/major.aspx"
+                  key="3"
+                  title="主要匯價"
+                >
+                  主要匯價
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/forex_list.aspx"
+                  key="4"
+                  title="交叉匯率"
+                >
+                  交叉匯率
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/twd.aspx"
+                  key="5"
+                  title="新台幣"
+                >
+                  新台幣
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/rmb.htm"
+                  key="6"
+                  title="人民幣"
+                >
+                  人民幣
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/jpy.htm"
+                  key="7"
+                  title="日元"
+                >
+                  日元
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/forex/eur.htm"
+                  key="8"
+                  title="歐元"
+                >
+                  歐元
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          catSlug="wd_stock"
+          className=""
+          key="5"
+          leftList={
+            Array [
+              Object {
+                "title": "國際股",
+                "url": "http://www.cnyes.com/global/IndexImmediateQuotedPrice/",
+              },
+              Object {
+                "title": "美股",
+                "url": "http://www.cnyes.com/USASTOCK/index.htm",
+              },
+              Object {
+                "title": "港股",
+                "url": "http://www.cnyes.com/hkstock/index.htm",
+              },
+              Object {
+                "title": "滬深股",
+                "url": "http://www.cnyes.com/shstock/index.htm",
+              },
+              Object {
+                "title": "日股",
+                "url": "http://www.cnyes.com/JP/index.htm",
+              },
+              Object {
+                "title": "國際期貨",
+                "url": "http://www.cnyes.com/futures/index.htm",
+              },
+              Object {
+                "title": "債券",
+                "url": "http://www.cnyes.com/bond/index.htm",
+              },
+              Object {
+                "title": "黃金",
+                "url": "http://www.cnyes.com/gold/index.htm",
+              },
+              Object {
+                "title": "全球央行",
+                "url": "http://www.cnyes.com/CentralBank/index.htm",
+              },
+              Object {
+                "title": "經濟指標",
+                "url": "http://www.cnyes.com/economy/indicator/Page/schedule.aspx",
+              },
+              Object {
+                "title": "StockQ",
+                "url": "http://money.cnyes.com/StockQ.aspx",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="全球市場"
+          url="http://www.cnyes.com/global/IndexImmediateQuotedPrice/"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://www.cnyes.com/global/IndexImmediateQuotedPrice/"
+            >
+              全球市場
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/global/IndexImmediateQuotedPrice/"
+                  key="0"
+                  title="國際股"
+                >
+                  國際股
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/USASTOCK/index.htm"
+                  key="1"
+                  title="美股"
+                >
+                  美股
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/hkstock/index.htm"
+                  key="2"
+                  title="港股"
+                >
+                  港股
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/shstock/index.htm"
+                  key="3"
+                  title="滬深股"
+                >
+                  滬深股
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/JP/index.htm"
+                  key="4"
+                  title="日股"
+                >
+                  日股
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/futures/index.htm"
+                  key="5"
+                  title="國際期貨"
+                >
+                  國際期貨
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/bond/index.htm"
+                  key="6"
+                  title="債券"
+                >
+                  債券
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/gold/index.htm"
+                  key="7"
+                  title="黃金"
+                >
+                  黃金
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/CentralBank/index.htm"
+                  key="8"
+                  title="全球央行"
+                >
+                  全球央行
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/economy/indicator/Page/schedule.aspx"
+                  key="9"
+                  title="經濟指標"
+                >
+                  經濟指標
+                </a>
+                <a
+                  className={null}
+                  href="http://money.cnyes.com/StockQ.aspx"
+                  key="10"
+                  title="StockQ"
+                >
+                  StockQ
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          catSlug="fund"
+          className="active theme-active"
+          key="6"
+          leftList={
+            Array [
+              Object {
+                "title": "我的基金",
+                "url": "http://fund.cnyes.com/MyFunds.aspx",
+              },
+              Object {
+                "title": "基金搜尋",
+                "url": "http://fund.cnyes.com/Search.aspx",
+              },
+              Object {
+                "title": "基金排行",
+                "url": "http://fund.cnyes.com/ranking/index.htm",
+              },
+              Object {
+                "title": "債券專區",
+                "url": "http://fund.cnyes.com/Fixedincome/",
+              },
+              Object {
+                "title": "配息專區",
+                "url": "http://fund.cnyes.com/dividend/index.htm",
+              },
+              Object {
+                "title": "研究報告",
+                "url": "http://fund.cnyes.com/report/report/index.htm",
+              },
+              Object {
+                "title": "基金交易平台",
+                "url": "https://www.fundsyes.com/?utm_source=cnyes&utm_medium=index_menu",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="基金"
+          url="http://fund.cnyes.com/index.htm"
+        >
+          <div
+            className="active theme-active"
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://fund.cnyes.com/index.htm"
+            >
+              基金
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="http://fund.cnyes.com/MyFunds.aspx"
+                  key="0"
+                  title="我的基金"
+                >
+                  我的基金
+                </a>
+                <a
+                  className={null}
+                  href="http://fund.cnyes.com/Search.aspx"
+                  key="1"
+                  title="基金搜尋"
+                >
+                  基金搜尋
+                </a>
+                <a
+                  className={null}
+                  href="http://fund.cnyes.com/ranking/index.htm"
+                  key="2"
+                  title="基金排行"
+                >
+                  基金排行
+                </a>
+                <a
+                  className={null}
+                  href="http://fund.cnyes.com/Fixedincome/"
+                  key="3"
+                  title="債券專區"
+                >
+                  債券專區
+                </a>
+                <a
+                  className={null}
+                  href="http://fund.cnyes.com/dividend/index.htm"
+                  key="4"
+                  title="配息專區"
+                >
+                  配息專區
+                </a>
+                <a
+                  className={null}
+                  href="http://fund.cnyes.com/report/report/index.htm"
+                  key="5"
+                  title="研究報告"
+                >
+                  研究報告
+                </a>
+                <a
+                  className={null}
+                  href="https://www.fundsyes.com/?utm_source=cnyes&utm_medium=index_menu"
+                  key="6"
+                  title="基金交易平台"
+                >
+                  基金交易平台
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          className=""
+          key="7"
+          leftList={
+            Array [
+              Object {
+                "title": "基金交易",
+                "url": "https://www.fundsyes.com/Index.aspx?utm_source=cnyes&utm_medium=channel_mainpage",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          rightList={
+            Array [
+              Object {
+                "title": "交易登入",
+                "url": "https://www.fundsyes.com/Login.aspx?utm_source=cnyes&utm_medium=channel_login",
+              },
+              Object {
+                "title": "免費開戶",
+                "url": "https://www.fundsyes.com/launch/fund_index.htm?utm_source=cnyes&utm_medium=channel_newuser",
+              },
+              Object {
+                "title": "最新優惠",
+                "url": "https://www.fundsyes.com/Guide/Expenses.aspx?utm_source=cnyes&utm_medium=channel_preferential",
+              },
+              Object {
+                "title": "投資雷達",
+                "url": "https://www.fundsyes.com/Tool/SuggestionList.aspx?utm_source=cnyes&utm_medium=channel_radar",
+              },
+            ]
+          }
+          rightListTitle="鉅亨基金交易平台"
+          title="交易"
+          url=""
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="submenu-title"
+            >
+              交易
+              <span
+                className="with-arrow"
+              />
+            </span>
+            <div
+              className="popup theme-popup"
+              style={Object {}}
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={Object {}}
+              >
+                <a
+                  className={null}
+                  href="https://www.fundsyes.com/Index.aspx?utm_source=cnyes&utm_medium=channel_mainpage"
+                  key="0"
+                  title="基金交易"
+                >
+                  基金交易
+                </a>
+              </nav>
+              <nav
+                className="news-list theme-news-list"
+                style={Object {}}
+              >
+                <h5>
+                  鉅亨基金交易平台
+                </h5>
+                <a
+                  className={null}
+                  href="https://www.fundsyes.com/Login.aspx?utm_source=cnyes&utm_medium=channel_login"
+                  key="0"
+                  title="交易登入"
+                >
+                  交易登入
+                </a>
+                <a
+                  className={null}
+                  href="https://www.fundsyes.com/launch/fund_index.htm?utm_source=cnyes&utm_medium=channel_newuser"
+                  key="1"
+                  title="免費開戶"
+                >
+                  免費開戶
+                </a>
+                <a
+                  className={null}
+                  href="https://www.fundsyes.com/Guide/Expenses.aspx?utm_source=cnyes&utm_medium=channel_preferential"
+                  key="2"
+                  title="最新優惠"
+                >
+                  最新優惠
+                </a>
+                <a
+                  className={null}
+                  href="https://www.fundsyes.com/Tool/SuggestionList.aspx?utm_source=cnyes&utm_medium=channel_radar"
+                  key="3"
+                  title="投資雷達"
+                >
+                  投資雷達
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          catSlug="tw_money"
+          className=""
+          key="8"
+          leftList={
+            Array [
+              Object {
+                "title": "銀行服務",
+                "url": "http://www.cnyes.com/money/BankService.aspx",
+              },
+              Object {
+                "title": "房貸",
+                "url": "http://cnyes.com/mortgage",
+              },
+              Object {
+                "title": "投資分析",
+                "url": "http://www.cnyes.com/money/fundptcalcu.aspx",
+              },
+              Object {
+                "title": "民生物價",
+                "url": "http://www.cnyes.com/money/livelihoodPrice.htm",
+              },
+              Object {
+                "title": "試算工具",
+                "url": "http://www.cnyes.com/money/BankCalculation.aspx",
+              },
+              Object {
+                "title": "理財新聞",
+                "url": "/news/cat/tw_money",
+              },
+              Object {
+                "title": "理財雜誌",
+                "url": "http://mag.cnyes.com/Column/financial/index.shtml",
+              },
+              Object {
+                "title": "固定收益",
+                "url": "http://www.cnyes.com/fixedincome/index.htm",
+              },
+              Object {
+                "title": "保險",
+                "url": "http://www.cnyes.com/insurance/index.htm",
+              },
+              Object {
+                "title": "租賃",
+                "url": "http://www.cnyes.com/leases/index.htm",
+              },
+              Object {
+                "title": "股市地圖",
+                "url": "http://www.cnyes.com/globalinvest/GlobalStock.htm",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="理財"
+          url="http://www.cnyes.com/money/index.htm"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://www.cnyes.com/money/index.htm"
+            >
+              理財
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/money/BankService.aspx"
+                  key="0"
+                  title="銀行服務"
+                >
+                  銀行服務
+                </a>
+                <a
+                  className={null}
+                  href="http://cnyes.com/mortgage"
+                  key="1"
+                  title="房貸"
+                >
+                  房貸
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/money/fundptcalcu.aspx"
+                  key="2"
+                  title="投資分析"
+                >
+                  投資分析
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/money/livelihoodPrice.htm"
+                  key="3"
+                  title="民生物價"
+                >
+                  民生物價
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/money/BankCalculation.aspx"
+                  key="4"
+                  title="試算工具"
+                >
+                  試算工具
+                </a>
+                <a
+                  className={null}
+                  href="/news/cat/tw_money"
+                  key="5"
+                  title="理財新聞"
+                >
+                  理財新聞
+                </a>
+                <a
+                  className={null}
+                  href="http://mag.cnyes.com/Column/financial/index.shtml"
+                  key="6"
+                  title="理財雜誌"
+                >
+                  理財雜誌
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/fixedincome/index.htm"
+                  key="7"
+                  title="固定收益"
+                >
+                  固定收益
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/insurance/index.htm"
+                  key="8"
+                  title="保險"
+                >
+                  保險
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/leases/index.htm"
+                  key="9"
+                  title="租賃"
+                >
+                  租賃
+                </a>
+                <a
+                  className={null}
+                  href="http://www.cnyes.com/globalinvest/GlobalStock.htm"
+                  key="10"
+                  title="股市地圖"
+                >
+                  股市地圖
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          catSlug="cnyeshouse"
+          className=""
+          key="9"
+          leftList={
+            Array [
+              Object {
+                "title": "馬來西亞",
+                "url": "http://house.cnyes.com/global/malaysia/default.aspx",
+              },
+              Object {
+                "title": "日本",
+                "url": "http://house.cnyes.com/global/japan/",
+              },
+              Object {
+                "title": "泰國",
+                "url": "http://house.cnyes.com/global/thailand/",
+              },
+              Object {
+                "title": "柬埔寨",
+                "url": "http://house.cnyes.com/global/Cambodia/",
+              },
+              Object {
+                "title": "澳洲",
+                "url": "http://house.cnyes.com/global/Australia/",
+              },
+              Object {
+                "title": "美國",
+                "url": "http://house.cnyes.com/global/American/",
+              },
+              Object {
+                "title": "台灣",
+                "url": "http://house.cnyes.com/",
+              },
+              Object {
+                "title": "房地產新聞",
+                "url": "http://house.cnyes.com/News/",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="海外房產"
+          url="http://house.cnyes.com/global/"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://house.cnyes.com/global/"
+            >
+              海外房產
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/global/malaysia/default.aspx"
+                  key="0"
+                  title="馬來西亞"
+                >
+                  馬來西亞
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/global/japan/"
+                  key="1"
+                  title="日本"
+                >
+                  日本
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/global/thailand/"
+                  key="2"
+                  title="泰國"
+                >
+                  泰國
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/global/Cambodia/"
+                  key="3"
+                  title="柬埔寨"
+                >
+                  柬埔寨
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/global/Australia/"
+                  key="4"
+                  title="澳洲"
+                >
+                  澳洲
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/global/American/"
+                  key="5"
+                  title="美國"
+                >
+                  美國
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/"
+                  key="6"
+                  title="台灣"
+                >
+                  台灣
+                </a>
+                <a
+                  className={null}
+                  href="http://house.cnyes.com/News/"
+                  key="7"
+                  title="房地產新聞"
+                >
+                  房地產新聞
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          className=""
+          key="10"
+          leftList={
+            Array [
+              Object {
+                "title": "名家專區",
+                "url": "http://blog.cnyes.com/Excerpt.aspx",
+              },
+              Object {
+                "title": "人氣排行榜",
+                "url": "http://blog.cnyes.com/SearchBlog.aspx?Purpose=Hit&ga=nav",
+              },
+              Object {
+                "title": "最新文章",
+                "url": "http://blog.cnyes.com/WorldFresh.aspx",
+              },
+            ]
+          }
+          newsBaseUrl=""
+          title="部落格"
+          url="http://blog.cnyes.com/"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://blog.cnyes.com/"
+            >
+              部落格
+              <span
+                className="with-arrow"
+              />
+            </a>
+            <div
+              className="popup theme-popup"
+              style={
+                Object {
+                  "height": "auto",
+                  "overflow": "visible",
+                  "width": "120px",
+                }
+              }
+            >
+              <nav
+                className="link-wrapper theme-link-wrapper"
+                style={
+                  Object {
+                    "height": "auto",
+                  }
+                }
+              >
+                <a
+                  className={null}
+                  href="http://blog.cnyes.com/Excerpt.aspx"
+                  key="0"
+                  title="名家專區"
+                >
+                  名家專區
+                </a>
+                <a
+                  className={null}
+                  href="http://blog.cnyes.com/SearchBlog.aspx?Purpose=Hit&ga=nav"
+                  key="1"
+                  title="人氣排行榜"
+                >
+                  人氣排行榜
+                </a>
+                <a
+                  className={null}
+                  href="http://blog.cnyes.com/WorldFresh.aspx"
+                  key="2"
+                  title="最新文章"
+                >
+                  最新文章
+                </a>
+              </nav>
+            </div>
+          </div>
+        </SubMenu>
+        <SubMenu
+          className=""
+          key="11"
+          newsBaseUrl=""
+          title="主題投資"
+          url="http://theme.cnyes.com/fund/index.html"
+        >
+          <div
+            className=""
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="submenu-title"
+              href="http://theme.cnyes.com/fund/index.html"
+            >
+              主題投資
+            </a>
+          </div>
+        </SubMenu>
+      </nav>
+    </header>
+    <div
+      className="subheader-wrapper"
+    >
+      <div
+        className="sub-header fixed theme-sub-header theme-fixed hide theme-hide js-hide js-header-sub-header"
+      >
+        <nav
+          className="cat-menu theme-cat-menu"
+        >
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="0"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "myInvestment",
+                  "title": "投資組合分析",
+                  "url": "/myInvestment/myInvestment.aspx?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "calcmyfundHTML5",
+                  "title": "基金透視鏡 ",
+                  "url": "/calcmyfundHTML5.aspx?ga=nav",
+                },
+              ]
+            }
+            title="我的基金"
+            url="/MyFunds.aspx"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/MyFunds.aspx"
+                title="我的基金"
+              >
+                我的基金
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "myInvestment",
+                      "title": "投資組合分析",
+                      "url": "/myInvestment/myInvestment.aspx?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "calcmyfundHTML5",
+                      "title": "基金透視鏡 ",
+                      "url": "/calcmyfundHTML5.aspx?ga=nav",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/myInvestment/myInvestment.aspx?ga=nav"
+                    key="myInvestment"
+                    title="投資組合分析"
+                  >
+                    投資組合分析
+                  </a>
+                  <a
+                    href="/calcmyfundHTML5.aspx?ga=nav"
+                    key="calcmyfundHTML5"
+                    title="基金透視鏡 "
+                  >
+                    基金透視鏡 
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={false}
+            isActive={false}
+            isNew={true}
+            key="1"
+            title="基金搜尋"
+            url="/search/"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="is-new"
+                href="/search/"
+                title="基金搜尋"
+              >
+                基金搜尋
+              </a>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="2"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "sector-ranking",
+                  "title": "組別分類排行",
+                  "url": "/sector-ranking/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "sector-ranking-yearly",
+                  "title": "組別年度績效排行",
+                  "url": "/sector-ranking-yearly/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "popylar-ranking",
+                  "title": "熱門基金排行",
+                  "url": "/popular/index.htm?ga=nav",
+                },
+              ]
+            }
+            title="基金排行"
+            url="/ranking/index.htm?ga=nav"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/ranking/index.htm?ga=nav"
+                title="基金排行"
+              >
+                基金排行
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "sector-ranking",
+                      "title": "組別分類排行",
+                      "url": "/sector-ranking/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "sector-ranking-yearly",
+                      "title": "組別年度績效排行",
+                      "url": "/sector-ranking-yearly/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "popylar-ranking",
+                      "title": "熱門基金排行",
+                      "url": "/popular/index.htm?ga=nav",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/sector-ranking/index.htm?ga=nav"
+                    key="sector-ranking"
+                    title="組別分類排行"
+                  >
+                    組別分類排行
+                  </a>
+                  <a
+                    href="/sector-ranking-yearly/index.htm?ga=nav"
+                    key="sector-ranking-yearly"
+                    title="組別年度績效排行"
+                  >
+                    組別年度績效排行
+                  </a>
+                  <a
+                    href="/popular/index.htm?ga=nav"
+                    key="popylar-ranking"
+                    title="熱門基金排行"
+                  >
+                    熱門基金排行
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="3"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "fixed-income",
+                  "title": "債券基金排行",
+                  "url": "/Fixedincome/index.aspx",
+                },
+                Object {
+                  "external": true,
+                  "name": "fixed-income-search",
+                  "title": "債券基金搜尋器",
+                  "url": "/Fixedincome/search.aspx",
+                },
+              ]
+            }
+            title="債券專區"
+            url="/Fixedincome/"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/Fixedincome/"
+                title="債券專區"
+              >
+                債券專區
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "fixed-income",
+                      "title": "債券基金排行",
+                      "url": "/Fixedincome/index.aspx",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "fixed-income-search",
+                      "title": "債券基金搜尋器",
+                      "url": "/Fixedincome/search.aspx",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/Fixedincome/index.aspx"
+                    key="fixed-income"
+                    title="債券基金排行"
+                  >
+                    債券基金排行
+                  </a>
+                  <a
+                    href="/Fixedincome/search.aspx"
+                    key="fixed-income-search"
+                    title="債券基金搜尋器"
+                  >
+                    債券基金搜尋器
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="4"
+            title="配息專區"
+            url="/dividend/index.htm"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className=""
+                href="/dividend/index.htm"
+                title="配息專區"
+              >
+                配息專區
+              </a>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="5"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "manager-view",
+                  "title": "經理人訪談",
+                  "url": "/report/manager/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "fidelity-aasia-bond",
+                  "title": "亞債新視野",
+                  "url": "http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "moring-star",
+                  "title": "晨星專欄",
+                  "url": "/report/MorningStar/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "cnyes-radar",
+                  "title": "鉅亨投資雷達",
+                  "url": "/report/cnyes/index.htm?ga=nav",
+                },
+              ]
+            }
+            title="研究報告"
+            url="/report/report/index.htm"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/report/report/index.htm"
+                title="研究報告"
+              >
+                研究報告
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "manager-view",
+                      "title": "經理人訪談",
+                      "url": "/report/manager/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "fidelity-aasia-bond",
+                      "title": "亞債新視野",
+                      "url": "http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "moring-star",
+                      "title": "晨星專欄",
+                      "url": "/report/MorningStar/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "cnyes-radar",
+                      "title": "鉅亨投資雷達",
+                      "url": "/report/cnyes/index.htm?ga=nav",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/report/manager/index.htm?ga=nav"
+                    key="manager-view"
+                    title="經理人訪談"
+                  >
+                    經理人訪談
+                  </a>
+                  <a
+                    href="http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav"
+                    key="fidelity-aasia-bond"
+                    title="亞債新視野"
+                  >
+                    亞債新視野
+                  </a>
+                  <a
+                    href="/report/MorningStar/index.htm?ga=nav"
+                    key="moring-star"
+                    title="晨星專欄"
+                  >
+                    晨星專欄
+                  </a>
+                  <a
+                    href="/report/cnyes/index.htm?ga=nav"
+                    key="cnyes-radar"
+                    title="鉅亨投資雷達"
+                  >
+                    鉅亨投資雷達
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="6"
+            title="基金交易平台"
+            url="https://www.fundsyes.com/?utm_source=cnyes&utm_medium=fundchannel_menu2"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className=""
+                href="https://www.fundsyes.com/?utm_source=cnyes&utm_medium=fundchannel_menu2"
+                title="基金交易平台"
+              >
+                基金交易平台
+              </a>
+            </span>
+          </SubNavItem>
+        </nav>
+      </div>
+      <div
+        className="sub-header theme-sub-header hide theme-hide js-hide js-header-sub-header"
+      >
+        <nav
+          className="cat-menu theme-cat-menu"
+        >
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="0"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "myInvestment",
+                  "title": "投資組合分析",
+                  "url": "/myInvestment/myInvestment.aspx?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "calcmyfundHTML5",
+                  "title": "基金透視鏡 ",
+                  "url": "/calcmyfundHTML5.aspx?ga=nav",
+                },
+              ]
+            }
+            title="我的基金"
+            url="/MyFunds.aspx"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/MyFunds.aspx"
+                title="我的基金"
+              >
+                我的基金
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "myInvestment",
+                      "title": "投資組合分析",
+                      "url": "/myInvestment/myInvestment.aspx?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "calcmyfundHTML5",
+                      "title": "基金透視鏡 ",
+                      "url": "/calcmyfundHTML5.aspx?ga=nav",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/myInvestment/myInvestment.aspx?ga=nav"
+                    key="myInvestment"
+                    title="投資組合分析"
+                  >
+                    投資組合分析
+                  </a>
+                  <a
+                    href="/calcmyfundHTML5.aspx?ga=nav"
+                    key="calcmyfundHTML5"
+                    title="基金透視鏡 "
+                  >
+                    基金透視鏡 
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={false}
+            isActive={false}
+            isNew={true}
+            key="1"
+            title="基金搜尋"
+            url="/search/"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="is-new"
+                href="/search/"
+                title="基金搜尋"
+              >
+                基金搜尋
+              </a>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="2"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "sector-ranking",
+                  "title": "組別分類排行",
+                  "url": "/sector-ranking/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "sector-ranking-yearly",
+                  "title": "組別年度績效排行",
+                  "url": "/sector-ranking-yearly/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "popylar-ranking",
+                  "title": "熱門基金排行",
+                  "url": "/popular/index.htm?ga=nav",
+                },
+              ]
+            }
+            title="基金排行"
+            url="/ranking/index.htm?ga=nav"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/ranking/index.htm?ga=nav"
+                title="基金排行"
+              >
+                基金排行
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "sector-ranking",
+                      "title": "組別分類排行",
+                      "url": "/sector-ranking/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "sector-ranking-yearly",
+                      "title": "組別年度績效排行",
+                      "url": "/sector-ranking-yearly/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "popylar-ranking",
+                      "title": "熱門基金排行",
+                      "url": "/popular/index.htm?ga=nav",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/sector-ranking/index.htm?ga=nav"
+                    key="sector-ranking"
+                    title="組別分類排行"
+                  >
+                    組別分類排行
+                  </a>
+                  <a
+                    href="/sector-ranking-yearly/index.htm?ga=nav"
+                    key="sector-ranking-yearly"
+                    title="組別年度績效排行"
+                  >
+                    組別年度績效排行
+                  </a>
+                  <a
+                    href="/popular/index.htm?ga=nav"
+                    key="popylar-ranking"
+                    title="熱門基金排行"
+                  >
+                    熱門基金排行
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="3"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "fixed-income",
+                  "title": "債券基金排行",
+                  "url": "/Fixedincome/index.aspx",
+                },
+                Object {
+                  "external": true,
+                  "name": "fixed-income-search",
+                  "title": "債券基金搜尋器",
+                  "url": "/Fixedincome/search.aspx",
+                },
+              ]
+            }
+            title="債券專區"
+            url="/Fixedincome/"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/Fixedincome/"
+                title="債券專區"
+              >
+                債券專區
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "fixed-income",
+                      "title": "債券基金排行",
+                      "url": "/Fixedincome/index.aspx",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "fixed-income-search",
+                      "title": "債券基金搜尋器",
+                      "url": "/Fixedincome/search.aspx",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/Fixedincome/index.aspx"
+                    key="fixed-income"
+                    title="債券基金排行"
+                  >
+                    債券基金排行
+                  </a>
+                  <a
+                    href="/Fixedincome/search.aspx"
+                    key="fixed-income-search"
+                    title="債券基金搜尋器"
+                  >
+                    債券基金搜尋器
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="4"
+            title="配息專區"
+            url="/dividend/index.htm"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className=""
+                href="/dividend/index.htm"
+                title="配息專區"
+              >
+                配息專區
+              </a>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="5"
+            subItems={
+              Array [
+                Object {
+                  "external": true,
+                  "name": "manager-view",
+                  "title": "經理人訪談",
+                  "url": "/report/manager/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "fidelity-aasia-bond",
+                  "title": "亞債新視野",
+                  "url": "http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "moring-star",
+                  "title": "晨星專欄",
+                  "url": "/report/MorningStar/index.htm?ga=nav",
+                },
+                Object {
+                  "external": true,
+                  "name": "cnyes-radar",
+                  "title": "鉅亨投資雷達",
+                  "url": "/report/cnyes/index.htm?ga=nav",
+                },
+              ]
+            }
+            title="研究報告"
+            url="/report/report/index.htm"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className="with-arrow"
+                href="/report/report/index.htm"
+                title="研究報告"
+              >
+                研究報告
+              </a>
+              <SubNavItemMenu
+                items={
+                  Array [
+                    Object {
+                      "external": true,
+                      "name": "manager-view",
+                      "title": "經理人訪談",
+                      "url": "/report/manager/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "fidelity-aasia-bond",
+                      "title": "亞債新視野",
+                      "url": "http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "moring-star",
+                      "title": "晨星專欄",
+                      "url": "/report/MorningStar/index.htm?ga=nav",
+                    },
+                    Object {
+                      "external": true,
+                      "name": "cnyes-radar",
+                      "title": "鉅亨投資雷達",
+                      "url": "/report/cnyes/index.htm?ga=nav",
+                    },
+                  ]
+                }
+              >
+                <nav
+                  className="cat-nav-sub-item"
+                >
+                  <a
+                    href="/report/manager/index.htm?ga=nav"
+                    key="manager-view"
+                    title="經理人訪談"
+                  >
+                    經理人訪談
+                  </a>
+                  <a
+                    href="http://campaign.cnyes.com/FidelityAsiaBond/?ga=nav"
+                    key="fidelity-aasia-bond"
+                    title="亞債新視野"
+                  >
+                    亞債新視野
+                  </a>
+                  <a
+                    href="/report/MorningStar/index.htm?ga=nav"
+                    key="moring-star"
+                    title="晨星專欄"
+                  >
+                    晨星專欄
+                  </a>
+                  <a
+                    href="/report/cnyes/index.htm?ga=nav"
+                    key="cnyes-radar"
+                    title="鉅亨投資雷達"
+                  >
+                    鉅亨投資雷達
+                  </a>
+                </nav>
+              </SubNavItemMenu>
+            </span>
+          </SubNavItem>
+          <SubNavItem
+            external={true}
+            isActive={false}
+            isNew={false}
+            key="6"
+            title="基金交易平台"
+            url="https://www.fundsyes.com/?utm_source=cnyes&utm_medium=fundchannel_menu2"
+          >
+            <span
+              className="cat-nav-item"
+            >
+              <a
+                className=""
+                href="https://www.fundsyes.com/?utm_source=cnyes&utm_medium=fundchannel_menu2"
+                title="基金交易平台"
+              >
+                基金交易平台
+              </a>
+            </span>
+          </SubNavItem>
+        </nav>
+      </div>
+    </div>
+  </div>
+</Header>
+`;
