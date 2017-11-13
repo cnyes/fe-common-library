@@ -1,4 +1,5 @@
-# Common Library and Component @cnyes fedev
+# Common Library and Component @cnyes fedev [![codecov](https://codecov.io/gh/cnyes/fe-common-library/branch/master/graph/badge.svg)](https://codecov.io/gh/cnyes/fe-common-library) [![CircleCI](https://circleci.com/gh/cnyes/fe-common-library.svg?style=svg)](https://circleci.com/gh/cnyes/fe-common-library)
+
 
 ## Import to React base project
 
